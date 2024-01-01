@@ -1,0 +1,75 @@
+PROJ4	START	7C31		#Starting address of program
+ZERO	WORD    0			
+ONE		WORD	1	
+TEN		WORD	10
+TWELVE	WORD	12
+SIXTY	WORD	60			
+AM		BYTE	C'A'		 
+PM		BYTE	C'P'
+ONSEV   WORD    127
+ONEIG   WORD    128   
+SHIFT   WORD    48 
+DEVICE	WORD	42		
+ITER    RESW    1
+ZTSTOR  RESW    1
+HOURS	RESB	1			
+MINS	RESB	1			
+AORP    RESB    1	
+FIRST   LDA     TWELVE
+        STA     ZTSTOR
+        LDCH    SECNDS
+        COMP    ONSEV
+        JLT     CALC
+        SUB     ONEIG
+        STCH    SECNDS
+        LDA     ZERO
+        STA     ZTSTOR
+CALC	LDA		SECNDS      # Start of Seconds -> Minutes
+        DIV     SIXTY       #  Convert Seconds to Minutes
+        STA     SECNDS      #  Store for Minute Conversion
+        DIV     SIXTY       #  Convert Minutes to Hours
+        STCH    HOURS       #  Store Hours
+        MUL     SIXTY       #
+        STA     ITER        #  Extract Minutes by subtracting hours
+        LDA     SECNDS
+        SUB     ITER
+        STCH    MINS
+        LDCH    AM          # Start of calculating AM/PM
+        STCH    AORP        #
+        LDCH    HOURS       #  With AM Selected
+        COMP    ZERO        #   If the Hours = 0, 
+        JEQ     ZTOUT       #     Jump to 12/00 Value
+        COMP    TWELVE      #   If HOURS < 12
+        JLT     TIMOUT      #    Jump to print out section
+        LDCH    PM           
+        STCH    AORP        #  With PM Selected
+        LDCH    HOURS       #   If Hours == 12
+        JEQ     TIMOUT      #    Jump to print out section
+        SUB     ZTSTOR      #   Else if Hours > 12
+        J       TIMOUT      #    If 12hr HOURS = HOURS - 12
+ZTOUT   LDA     ZTSTOR      #    If 24hr HOURS = HOURS - 00
+TIMOUT  JSUB    PRINT       #  Print Hours
+        LDCH    MINS
+        JSUB    PRINT       #  Print Minutes
+        J       FINALE
+PRINT   STCH    HOURS
+        DIV     TEN
+        ADD     SHIFT
+        WD      DEVICE
+        SUB     SHIFT
+        MUL     TEN
+        STA     SECNDS
+        LDCH    HOURS
+        SUB     SECNDS
+		ADD     SHIFT
+        WD      DEVICE        
+        RSUB
+FINALE  LDA     ZTSTOR
+        COMP    ZERO     #Write AM or PM
+        JEQ     EXIT
+        LDCH    AORP
+        WD      DEVICE   
+EXIT  	LDL     ZERO	
+		RSUB    
+SECNDS	RESW	1			#INPUT
+		END		FIRST
