@@ -1,0 +1,11 @@
+This application requires the following libraries:
+
+tk
+names
+cx_Oracle
+
+To run this program, just run the databaseProject.py script!
+
+John Reddick: Created this program and the UI
+Sam Shakeel: Provided the SQL statements to create the tables
+Ethan Lopez: Diagrams, and administrative hurdles
