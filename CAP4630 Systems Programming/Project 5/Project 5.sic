@@ -1,0 +1,143 @@
+PRIME   START   0   #Z:\home\oem\Downloads\Project 5.sic
+VALUE   RESW    1   #ORIGINAL VALUE
+ZERO    WORD    0
+ONE     WORD    1
+TWO     WORD    2
+THREE   WORD    3
+EIGHT   WORD    8
+TEN     WORD    10          #1048576
+SXTEEN  WORD    16          #16777215
+DEVICE  WORD    42
+MAX     WORD    1048576
+SPACE   BYTE    C' '
+HEX     BYTE    C'0123456789ABCDEF'
+YPRIME  BYTE    C' IS PRIME'
+NPRIME  BYTE    C' IS NOT PRIME: '
+CB1     BYTE    X'01'           #Composite beggining 1
+CE1     BYTE    X'0B'
+LTWO    BYTE    C'LESS THAN '
+CB2     BYTE    X'0D'
+CE2     BYTE    X'22'
+BYTWO   BYTE    C'EVEN NUMBER, BUT NOT '
+CB3     BYTE    X'24'
+CE3     BYTE    X'38'
+NPNTWO  BYTE    C'EVENLY DIVISIBLE BY '
+BADEND 	BYTE 	C'ERROR: INPUT OUT OF RANGE!'
+FFTEEN 	WORD 	15
+TNTSIX 	WORD 	26
+THOU 	WORD 	999
+RET     RESW    1   #FOR JUMPING
+PROC    RESW    1   #PROCESSING
+TEMP    RESW    1   #TEMPORARY VALUE
+QSHIFT  RESW    1
+QUOTE   RESW    1
+BOUND   RESW    1
+STOR    RESW    1
+        LDA     SXTEEN
+        STA     QSHIFT
+        LDA     VALUE
+		STA     PROC
+        LDA     MAX 
+        JSUB    BYPASS  #Print the hex values
+        LDA     TWO
+        STA     PROC
+        LDA     VALUE
+        COMP    TWO
+        JGT     ISODD   #Jump to Less than 2 print out
+        JEQ     TWOOUT
+        LDCH    CB1
+        JSUB    CMPOUT
+ISODD   COMP 	THREE
+		JEQ 	TWOOUT
+		AND     ONE
+        COMP    ONE
+        JEQ     YODD   #Jump to divisible by 2, but not two
+        LDCH    CB2
+        JSUB    CMPOUT
+YODD    LDX     THREE
+PLOOP   STX     PROC
+        LDA     VALUE
+        DIV     PROC
+        MUL     PROC
+        COMP    VALUE
+        JLT     CPRIME  #Jump to Not Prime print out
+        LDCH    CB3
+        JSUB    CMPOUT
+CPRIME  TIX     VALUE
+        TIX     VALUE
+        JLT     PLOOP
+TWOOUT  LDX     ZERO
+PRMOUT  LDCH    YPRIME,X
+        WD      DEVICE
+        TIX     TEN
+        JLT     PRMOUT
+        J       EXIT
+NPRINT  LDA     ONE         #NPRINT: 
+NLOOP   MUL     QSHIFT      #DEC MODE
+        COMP    PROC        #QSHIFT: 10
+        JLT     NLOOP       #PROC  : Dec number to print
+NPLOOP  DIV     QSHIFT
+BYPASS  STA     QUOTE       #HEX MODE
+        LDA     PROC        #BYPASS THE NPLOOP
+        DIV     QUOTE       #QSHIFT: 16
+        STA     TEMP        #PROC  : Hex number to print
+        LDX     TEMP        #QUOTE : Really big number to figure out (I think 16777216)
+        MUL     QUOTE
+        STA     TEMP
+        LDA     PROC
+        SUB     TEMP
+        STA     PROC
+        LDCH    HEX,X
+        WD      DEVICE
+        LDA     QUOTE
+        COMP    ONE
+        JGT     NPLOOP
+        LDA     QSHIFT
+        COMP    SXTEEN
+        JLT     NUMOUT
+        LDX     ZERO
+        LDCH    SPACE
+BLOUT   WD      DEVICE
+        TIX     EIGHT
+        JLT     BLOUT
+        LDA     VALUE
+        STA     PROC
+		COMP 	THOU
+		JLT 	GOOD
+		LDX 	ZERO
+BADOUT	LDCH 	BADEND,X
+		WD 		DEVICE
+		TIX 	TNTSIX
+		JLT 	BADOUT
+		J 		EXIT
+GOOD	LDA     TEN
+        STA     QSHIFT
+        J       NPRINT
+NUMOUT  RSUB
+CMPOUT  STL     RET
+        STA     TEMP
+        LDX     ZERO
+NPOUT   LDCH    NPRIME,X
+        WD      DEVICE
+        TIX     FFTEEN
+        JLT     NPOUT
+SHTCUT  LDX     TEMP
+        LDCH    CB1,X
+        STA     BOUND
+CMPSTR  TIX     BOUND   #"String out"
+        LDCH    CB1,X
+        WD      DEVICE
+        JLT     CMPSTR
+        JSUB    NPRINT
+EXIT  	LDL     ZERO	
+		RSUB
+		END		PRIME
+
+
+
+ 
+
+
+        
+
+
