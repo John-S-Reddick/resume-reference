@@ -1,0 +1,71 @@
+How to get started editing the website:
+
+	Quick References (Skip to Getting started to get started):
+		Best place to find Bootstrap Components:
+			https://react-bootstrap.github.io/components/placeholder/
+		
+		Best place to find free bootstrap themes:
+			https://bootswatch.com/
+		
+		Commands:
+			npm start
+				Starts the development server.
+
+			npm run build
+				Bundles the app into static files for production.
+
+			npm test
+				Starts the test runner.
+
+			 npm run eject
+				Removes this tool and copies build dependencies, configuration files
+				and scripts into the app directory. If you do this, you can’t go back!
+
+	Getting Started:
+		Hello! John here! Please follow these simple steps exactly as outlined
+		to quickly and easily get started editing the app! It should start in no time! :D
+	
+	Acquiring Files:
+		1. Download and run Node.js. (if you do not already have it) from this link:
+			https://nodejs.org/en/download
+		2. (Skip this step if the parent folder is called src) Once that is complete go to this google drive link (This Google drive):
+			https://drive.google.com/drive/folders/14lV6-pZAZ4HY86U8DPLgWoqpFCCxErBJ?usp=sharing
+		3. (You have completed this step) Download and EXTRACT the file called "src.zip" to your downloads folder
+			(Keep track of where this is, maybe add it to favorites if you want)
+			(Make sure the name of the file is "src" it is important)
+	
+	Creating the app development environment:
+	
+		IF YOU ENCOUNTER THIS ERROR:
+		
+		**********************************************
+		* The system cannot find the path specified. *
+		**********************************************
+		
+		Then change username in the following commands to your username
+			in the file system. The relevant commands are marked in *!
+			
+			(Do not include the *!)
+	
+		
+		1. Open cmd and type (Optionally, use a different file path of your choice)
+			*! cd "C:\Users\username\Documents"
+		2. Run the following commands
+			npx create-react-app react-bootstrap-app
+			cd react-bootstrap-app
+			npm install react-bootstrap bootstrap axios
+			npm audit fix --force
+			del src
+			Y
+			*! move "C:\Users\username\Downloads\src\src\*.*" src			
+			npm start
+			start .\
+			
+		3. Open this folder in your IDE of choice
+	Making Changes:
+			1. To start the website run the following command in the name_of_app folder
+				npm start
+			2. To get the most recent update get Layout.js from the drive, and move it into the src folder
+				Layout.js -> ...react-bootstrap-app.src
+			3. Most of the changes are done in layout.js
+			4. Happy coding! :D
