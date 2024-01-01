@@ -1,0 +1,12 @@
+Link to dataset (Too many files for the repository!!)
+https://storage.googleapis.com/download.tensorflow.org/data/speech_commands_v0.01.tar.gz
+
+
+
+This project follows and implements the example from MATLAB'S
+https://www.mathworks.com/help/audio/ug/train-speech-command-recognition-model-using-deep-learning.html#mw_rtc_DeepLearningSpeechRecognitionExample_M_382DD437
+
+Warden P. "Speech Commands: A public dataset for single-word speech recognition", 2017. 
+Available from https://storage.googleapis.com/download.tensorflow.org/data/speech_commands_v0.01.tar.gz. Copyright Google 2017.
+The Speech Commands Dataset is licensed under the Creative Commons Attribution 4.0 license,
+available here: https://creativecommons.org/licenses/by/4.0/legalcode.
