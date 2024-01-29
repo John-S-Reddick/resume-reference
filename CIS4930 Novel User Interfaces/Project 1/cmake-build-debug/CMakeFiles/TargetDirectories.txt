@@ -1,0 +1,3 @@
+C:/Users/John/CLionProjects/CIS4930 Novel User Interfaces Project1/cmake-build-debug/CMakeFiles/CIS4930_Novel_User_Interfaces_Project1.dir
+C:/Users/John/CLionProjects/CIS4930 Novel User Interfaces Project1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/John/CLionProjects/CIS4930 Novel User Interfaces Project1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
