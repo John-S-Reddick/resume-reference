@@ -1,6 +1,6 @@
 <h1>Introduction</h1>
 <h1>Project 1 – Exploring $-family recognizers</h1>
-<h5>Due: 2/8/24 11:59 pm<h5/>  <a href="https://canvas.unf.edu/courses/100860/assignments/1328145.com]">Submission</a>
+<h5>Due: 2/8/24 11:59 pm <a href="https://canvas.unf.edu/courses/100860/assignments/1328145.com]">Submission</a><h5/>  
 
 This project was created by John S. Reddick. The outline of the following project requirements are adapted from the 
     project description created by Corey Pittman in 2024. I have included an original copy of the instructions 
