@@ -71,7 +71,7 @@ encountered
         This project has been an excellent way to learn and teach myself how to use GitHub
     </li>
     <li> <h2>Jet Brains</h2>
-        I originally used <a href="https://www.jetbrains.com/clion/download/#section=windows">CLion</a> to develop with C++, but have since switched to JetBrain's <a href="https://www.jetbrains.com/pycharm/download/">PyCharm</a> for development
+        I originally used <a href="https://www.jetbrains.com/clion/download/#section=windows">CLion</a> to develop with C++, but have since switched to JetBrain's <a href="https://www.jetbrains.com/pycharm/download/">PyCharm</a> for development. These have been massive successes and make for easy integration with GitHub, allowing me to push updates to the repository through graphical mouse based interface, and through the command line.
     </li>
 </ol>
 
