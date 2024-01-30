@@ -76,7 +76,7 @@ encountered
         I originally used <a href="https://www.jetbrains.com/clion/download/#section=windows">CLion</a> to develop with C++, but have since switched to JetBrain's <a href="https://www.jetbrains.com/pycharm/download/">PyCharm</a> for development. These have been massive successes and make for easy integration with GitHub, allowing me to push updates to the repository through graphical mouse based interface, and through the command line.
     </li>
     <li> <h2>Markdown Reference</h2>
-        The markdown reference guide <a href="https://www.markdownguide.org/basic-syntax/")>here</a> has allowed me to document my readme in style while also empowering this readme to act as a repository for useful links to not only my current and future self, but to anyone who comes across this project in the future. If you want a fancy readme, call it readme.md! Much fancier than readme.me (or even readme.txt)
+        The markdown reference guide <a href="https://www.markdownguide.org/basic-syntax/")>here</a> has allowed me to document my readme in style while also empowering this readme to act as a repository for useful links for my current and future self. To anyone who comes across this project in the future. If you want a fancy readme, call it readme.md and follow the link! Much fancier than readme.me (or even readme.txt)
     </li>
 </ol>
 
