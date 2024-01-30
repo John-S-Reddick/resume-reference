@@ -31,13 +31,13 @@ encountered
 
 This project was created by John S. Reddick. The outline of the following project requirements are adapted from the 
     project description created by Corey Pittman in 2024. I have included an original copy of the instructions 
-[here](https://github.com/John-S-Reddick/resume-reference/blob/main/CIS4930%20Novel%20User%20Interfaces/Project%201/SpecialTopicsProj1 "here")
+[here](https://github.com/John-S-Reddick/resume-reference/blob/main/CIS4930%20Novel%20User%20Interfaces/Project%201/SpecialTopicsProj1.pdf "here")
 
 <ol>
   <h2><li>Purpose</h2>
     The purpose of this assignment is twofold. It is first designed to give you experience with simple
     recognizers using reliable data (touch/stylus/mouse). Second, it is to give you experience with
-    implementing a state of the art algorithms from scratch by relying on algorithms provided in
+    implementing a state-of-the-art algorithms from scratch by relying on algorithms provided in
     the research paper
     </li>
 
