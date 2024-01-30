@@ -1,5 +1,16 @@
+Submission: https://canvas.unf.edu/courses/100860/assignments/1328145
+
+Libraries:
+  QT Canvas:
+    Home:
+      https://doc.qt.io/
+    Installation:
+      https://www.qt.io/offline-installers
+      https://www.qt.io/download-qt-installer-oss?utm_referrer=https%3A%2F%2Fwww.qt.io%2Fdownload-open-source
+
+
 Project 1 – Exploring $-family recognizers
-Due: 2/8/24 11:59 pm
+  Due: 2/8/24 11:59 pm
 
 The purpose of this assignment is twofold. It is first designed to give you experience with simple
 recognizers using reliable data (touch/stylus/mouse). Second, it is to give you experience with
@@ -8,20 +19,32 @@ the research paper
 
 Requirements:
 There are two main requirements for this assignment. First, you will implement 3 $- family
-recognizers and compare them. The first is the $N recognizer discussed here:
+recognizers and compare them. 
 
-  Anthony, L. and Wobbrock, J.O. (2010). A lightweight multistroke recognizer for user interface
-  prototypes. Proceedings of Graphics Interface (GI '10). Ottawa, Ontario (May 31-June 2, 2010).
-  Toronto, Ontario: Canadian Information Processing Society, pp. 245- 252.
+The First is the $1 recognizer discussed here:
 
-The Second recognizer is known as Protractor and details can be found here:
-  Li, Yang (2010). Protractor: a fast and accurate gesture recognizer. In Proceedings of the SIGCHI
-  Conference on Human Factors in Computing Systems (CHI '10). ACM, New York, NY, USA, 2169-
-  2172, April 2010.
+  PDF of paper
+    http://faculty.washington.edu/wobbrock/pubs/uist-07.01.pdf
+
+  Academic source:
+
+The Second recognizer is $Q, details can be found here:
+
+  PDF of paper
+    http://faculty.washington.edu/wobbrock/pubs/mobilehci-18.pdf
+
+  Academic source:
 
 The third recognizer is known as Penny Pincher and the details can be found here:
-  Taranta, E. and LaViola, J. Penny Pincher: A Blazing Fast, Highly Accurate $-Family Recognizer,
-  Proceedings of Graphics Interface 2015, 195-202, June 2015.
+
+  PDF of paper
+    https://www.eecs.ucf.edu/isuelab/publications/pubs/gi2015_eugene.pdf
+
+  https://dl.acm.org/doi/10.1145/3229434.3229465
+
+  Academic citation:
+    Taranta, E. and LaViola, J. Penny Pincher: A Blazing Fast, Highly Accurate $-Family Recognizer,
+    Proceedings of Graphics Interface 2015, 195-202, June 2015.
 
 
 You should test these algorithms with the following symbols: 0,1,2,3,4,5,6,7,8,9,+,-,*,t,a,n,s,c,i,
