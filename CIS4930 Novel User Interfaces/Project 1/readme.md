@@ -20,11 +20,14 @@ This project was created by John S. Reddick. The outline of the following projec
             symbol 5 times, which should give you a good accuracy number. You should run separate
             experiments using the data you collected using a mouse vs a touch screen (if applicable). Please
             put the results of your experiment in your README file.
+            In contrast to the directions as described in the original instructions written by Dr. Pittman and with his consent, I will
+            be using the %1 recognizer, the $Q recognizer, and Penny Pincher.
     </li>
     <li> <h2>Recognizers</h2>        
             You should test these algorithms with the following symbols: 0,1,2,3,4,5,6,7,8,9,+,-,*,t,a,n,s,c,i,
             and the square root symbol. I would also recommend adding some more oddball symbols of
             your own choosing
+            (Here I will provide citations to the pages)
             <a href="http://faculty.washington.edu/wobbrock/pubs/uist-07.01.pdf">$1</a>
             <b/>
             <a href="http://faculty.washington.edu/wobbrock/pubs/mobilehci-18.pdf">$Q</a>
