@@ -12,9 +12,7 @@ Installation:
 Set-up Guide:
     Tkinter
 
-[link](https://www.example.com/my%20great%20page)
-
-<a href="https://www.example.com/my great page">link</a>
+<a href="https://canvas.unf.edu/courses/100860/assignments/1328145.com]">Submission</a>
 
 Please include a README file describing what works and
 what does not, the results of your experiments, any known bugs, and any problems you
@@ -23,11 +21,11 @@ encountered
 <h1>Introduction</h1>
 <h1>Project 1 – Exploring $-family recognizers</h1>
 <h5>Due: 2/8/24 11:59 pm<h5/> 
-[Submission]([https://canvas.unf.edu/courses/100860/assignments/1328145.com](https://canvas.unf.edu/courses/100860/assignments/1328145] "Submission")
+[Submission]([] "Submission")
 
 This project was created by John S. Reddick. The outline of the following project requirements are adapted from the 
     project description created by Corey Pittman in 2024. I have included an original copy of the instructions 
-[here](https://github.com/John-S-Reddick/resume-reference/blob/main/CIS4930%20Novel%20User%20Interfaces/Project%201/SpecialTopicsProj1.pdf "here")
+    <a href="https://github.com/John-S-Reddick/resume-reference/blob/main/CIS4930%20Novel%20User%20Interfaces/Project%201/SpecialTopicsProj1.pdf">here</a>
 
 <ol>
     <li> <h2>Purpose</h2>
