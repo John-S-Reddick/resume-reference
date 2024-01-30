@@ -18,13 +18,6 @@ Please include a README file describing what works and
 what does not, the results of your experiments, any known bugs, and any problems you
 encountered
 
-
-<h1>Problems encountered</h1>
-
-    1. I attempted to use the Qt C++ Library, but it became too unwieldly to implement.
-        I would like to implement Qt and take advantage of C++, but from what I can tell it would need
-    
-
 <h1>Introduction</h1>
 <h1>Project 1 – Exploring $-family recognizers</h1>
 <h5>Due: 2/8/24 11:59 pm<h5/>
@@ -99,4 +92,17 @@ encountered
     </li>
 </ol>
 
+
+<h1>Problems encountered</h1>
+
+<ol>
+    <li>
+        <h2><li>Qt and C++</h2>
+        I attempted to use the Qt C++ Library, but it became too unwieldly to implement.
+        I would like to implement Qt and take advantage of C++, but based on previous experience 
+        with the Qt library I know I would be better suited to deveolping on Linux where Qt plays a little more nicely.
+        This diversion would eat into the time necessary to finish the project so I will be abstaining from that.
+        Instead I have switched over to Python and the Tkinter library.
+    </li>
+</ol>
 
