@@ -21,21 +21,15 @@ This project was created by John S. Reddick. The outline of the following projec
             experiments using the data you collected using a mouse vs a touch screen (if applicable). Please
             put the results of your experiment in your README file.
     </li>
-    <li> <h2>Recognizers</h2>
-            The first is the $N recognizer discussed here:
-            Anthony, L. and Wobbrock, J.O. (2010). A lightweight multistroke recognizer for user interface
-            prototypes. Proceedings of Graphics Interface (GI '10). Ottawa, Ontario (May 31-June 2, 2010).
-            Toronto, Ontario: Canadian Information Processing Society, pp. 245- 252.
-            The second recognizer is known as Protractor and details can be found here:            
-            Li, Yang (2010). Protractor: a fast and accurate gesture recognizer. In Proceedings of the SIGCHI
-            Conference on Human Factors in Computing Systems (CHI '10). ACM, New York, NY, USA, 2169-
-            2172, April 2010.            
-            The third recognizer is known as Penny Pincher and the details can be found here:
-            Taranta, E. and LaViola, J. Penny Pincher: A Blazing Fast, Highly Accurate $-Family Recognizer,
-            Proceedings of Graphics Interface 2015, 195-202, June 2015.
+    <li> <h2>Recognizers</h2>        
             You should test these algorithms with the following symbols: 0,1,2,3,4,5,6,7,8,9,+,-,*,t,a,n,s,c,i,
             and the square root symbol. I would also recommend adding some more oddball symbols of
             your own choosing
+            <a href="http://faculty.washington.edu/wobbrock/pubs/uist-07.01.pdf">$1</a>
+            <b/>
+            <a href="http://faculty.washington.edu/wobbrock/pubs/mobilehci-18.pdf">$Q</a>
+            <b/>
+            <a href="https://www.eecs.ucf.edu/isuelab/publications/pubs/gi2015_eugene.pdf">Penny Pincher</a>            
     </li>
     <li> <h2>Strategy</h2>
             The first step of this project is to create some kind of basic canvas drawing application. This can
