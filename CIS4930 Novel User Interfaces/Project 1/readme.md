@@ -1,27 +1,6 @@
-Submission: https://canvas.unf.edu/courses/100860/assignments/1328145
-
-Libraries:
-
-Tkinter
-
-
-
-Installation:
-
-
-Set-up Guide:
-    Tkinter
-
-<a href="https://canvas.unf.edu/courses/100860/assignments/1328145.com]">Submission</a>
-
-Please include a README file describing what works and
-what does not, the results of your experiments, any known bugs, and any problems you
-encountered
-
 <h1>Introduction</h1>
 <h1>Project 1 – Exploring $-family recognizers</h1>
-<h5>Due: 2/8/24 11:59 pm<h5/> 
-[Submission]([] "Submission")
+<h5>Due: 2/8/24 11:59 pm<h5/>  <a href="https://canvas.unf.edu/courses/100860/assignments/1328145.com]">Submission</a>
 
 This project was created by John S. Reddick. The outline of the following project requirements are adapted from the 
     project description created by Corey Pittman in 2024. I have included an original copy of the instructions 
@@ -81,15 +60,25 @@ This project was created by John S. Reddick. The outline of the following projec
             what does not, the results of your experiments, any known bugs, and any problems you
             encountered
     </li>
-    <li> <h2>Grading</h2>
+    <li> <h2>Grading and Notes</h2>Please include a README file describing what works and
+what does not, the results of your experiments, any known bugs, and any problems you
+encountered
         80% correct implementation of the recognizers
         20% documentation
     </li>
 </ol>
 
+<h1>Successes</h1>
+<ol>
+    <li> <h2>GitHub</h2>
+        This project has been an excellent way to learn and teach myself how to use GitHub
+    </li>
+    <li> <h2>Jet Brains</h2>
+        I originally used <a href="https://www.jetbrains.com/clion/download/#section=windows">CLion</a> to develop with C++, but have since switched to JetBrain's <a href="https://www.jetbrains.com/pycharm/download/">PyCharm</a> for development
+    </li>
+</ol>
 
 <h1>Problems encountered</h1>
-
 <ol>
     <li> <h2>Qt and C++</h2>
             I attempted to use the Qt C++ Library, but it became too unwieldly to implement.
