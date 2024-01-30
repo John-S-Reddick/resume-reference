@@ -3,7 +3,7 @@
 <h5><a href="https://canvas.unf.edu/courses/100860/assignments/1328145.com]">Submission</a> Due: 2/8/24 11:59 pm<h5/>  
 
 This project was created by John S. Reddick. The outline of the following project requirements are adapted from the 
-    project description created by Corey Pittman in 2024. I have included an original copy of the instructions 
+    project description created by Corey Pittman in 2024. I have included an original copy of the instructions as written by Dr. Pittman 
     <a href="https://github.com/John-S-Reddick/resume-reference/blob/main/CIS4930%20Novel%20User%20Interfaces/Project%201/SpecialTopicsProj1.pdf">here</a>
 
 <ol>
