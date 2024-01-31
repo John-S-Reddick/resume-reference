@@ -17,7 +17,7 @@ This is a sub paragraph, formatted in heading 3 style
 ## Another paragraph <a name="paragraph2"></a>
 The second paragraph text
 
-<a name="introduction"><h1>Introduction</h1></a>
+##Introduction
 <h1>Project 1 – Exploring $-family recognizers</h1>
 <h5><a href="https://canvas.unf.edu/courses/100860/assignments/1328145.com]">Submission</a> Due: 2/8/24 11:59 pm<h5/>  
 
