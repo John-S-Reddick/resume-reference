@@ -19,11 +19,11 @@ This project was created by John S. Reddick. The outline of the following projec
     <a href="https://github.com/John-S-Reddick/resume-reference/blob/main/CIS4930%20Novel%20User%20Interfaces/Project%201/SpecialTopicsProj1.pdf">here</a>
 
 
-<a name="purpose"/><h2>Purpose</h2>
-            The purpose of this assignment is twofold. It is first designed to give you experience with simple
-            recognizers using reliable data (touch/stylus/mouse). Second, it is to give you experience with
-            implementing a state-of-the-art algorithms from scratch by relying on algorithms provided in
-            the research paper
+### Purpose
+The purpose of this assignment is twofold. It is first designed to give you experience with simple
+recognizers using reliable data (touch/stylus/mouse). Second, it is to give you experience with
+implementing a state-of-the-art algorithms from scratch by relying on algorithms provided in
+the research paper
             
  <a name="requirements"/> <h2>Requirements</h2>
             There are two main requirements for this assignment. First, you will implement 3 $- family
