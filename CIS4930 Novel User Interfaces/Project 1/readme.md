@@ -113,6 +113,7 @@ This project was created by John S. Reddick. The outline of the following projec
     </ol>
     <h2>In the README:</h2>
     <ol>
+        <li>-[ ] Cite papers in recognizers section</li>
         <li>-[ ] Describe what works</li>
         <li>-[ ] Describe what doesn't work</li>
         <li>-[ ] Results of your experiments</li>
