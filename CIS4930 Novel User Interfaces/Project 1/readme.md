@@ -8,7 +8,12 @@
     6. [Deliverables](#deliverables)
     7. [Grading and Notes](#grading-and-notes)    
 2. [Successes and Resources](#successes-and-resources)
+    1. [GitHub](#github)
+    2. [Jet Brains](#jet-brains)
+    3. [Markdown Reference](#markdown)
+    4. [Tkinter](#tkinter)
 3. [Problems Encountered](#problems-encountered)
+    1. [Qt](#qt)
 
 ## Introduction
 <h1>Project 1 – Exploring $-family recognizers</h1>
@@ -89,23 +94,32 @@ This project was created by John S. Reddick. The outline of the following projec
 <a name="successes-and-resources"/>
 <h1>Successes and Resources</h1>
 <ol>
-    <li> <h2>GitHub</h2>
+    <a name="github"/><h2><li> GitHub</h2>
         This project has been an excellent way to learn and teach myself how to use GitHub. GitHub is an industry standard, and the oppurtunity to become familiar with it is invaluable.
         The convenience of GitHub will allow me to revert any changes I have made to my code which I have taken advantage of plenty of times, and It will also allow me to change development devices with no hassle.
         Over the course of this project I will be out of town and away from my primary development workstation, but my laptop will be able to make use of the repository for seamless development.
     </li>
-    <li> <h2>Jet Brains</h2>
-        I originally used <a href="https://www.jetbrains.com/clion/download/#section=windows">CLion</a> to develop with C++, but have since switched to JetBrain's <a href="https://www.jetbrains.com/pycharm/download/">PyCharm</a> for development. These have been massive successes and make for easy integration with GitHub, allowing me to push updates to the repository through graphical mouse based interface, and through the command line.
+    <a name="jet-brains"/><h2><li> Jet Brains</h2>
+        I originally used <a href="https://www.jetbrains.com/clion/download/#section=windows">CLion</a> to develop with C++, but have since switched to JetBrain's
+        <a href="https://www.jetbrains.com/pycharm/download/">PyCharm</a> for development. These have been massive successes and make for easy integration with GitHub,
+        allowing me to push updates to the repository through graphical mouse based interface, and through the command line.
     </li>
-    <li> <h2>Markdown Reference</h2>
-        The markdown reference guide <a href="https://www.markdownguide.org/basic-syntax/")>here</a> has allowed me to document my readme in style while also empowering this readme to act as a repository for useful links for my current and future self. To anyone who comes across this project in the future. My table of contents is from <a href="https://stackoverflow.com/questions/11948245/markdown-to-create-pages-and-table-of-contents#27953547")>this</a> Stack exchange article. If you want a fancy readme, call it readme.md and follow the link! Much fancier than readme.me (or even readme.txt)
+    <a name="markdown"/><h2><li> Markdown Reference</h2>
+        The markdown reference guide <a href="https://www.markdownguide.org/basic-syntax/")>here</a> has allowed me to document my readme in style while also empowering this readme
+        to act as a repository for useful links for my current and future self. To anyone who comes across this project in the future. My table of contents is from 
+        <a href="https://stackoverflow.com/questions/11948245/markdown-to-create-pages-and-table-of-contents#27953547")>this</a> Stack exchange article.
+        If you want a fancy readme, call it readme.md and follow the link! Much fancier than readme.me (or even readme.txt)
+    </li>
+    <a name="tkinter"/><h2><li> Tkinter</h2>
+        Tkinter was much more helpful than Qt, and easier to start. I am already familiar with Tkinter, so it was a breeze to get started.
+        The ability to size canvases and track mouse movements was very easy.
     </li>
 </ol>
 
 <a name="problems-encountered"/>
 <h1>Problems encountered</h1>
 <ol>
-    <li> <h2>Qt and C++</h2>
+    <a name="qt"/><h2><li> QT</h2>
             I attempted to use the Qt C++ Library, but it became too unwieldly to implement.
             I would like to implement Qt and take advantage of C++, but based on previous experience 
             with the Qt library I know I would be better suited to deveolping on Linux where Qt plays a little more nicely.
