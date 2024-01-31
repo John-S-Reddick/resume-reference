@@ -85,7 +85,7 @@ This project was created by John S. Reddick. The outline of the following projec
             Dr. Pittman reccomends
             https://www.eecs.ucf.edu/isuelab/demo/stochastic-resampling/ or
             https://depts.washington.edu/acelab/proj/dollar/index.html for examples of similar canvas
-            implementations, or ask Dr. Pittman if more examples are needed.
+            implementations, Dr. Pittman offered to reccomend additional examples as needed.
         </li>            
     </ol>
 </li> 
