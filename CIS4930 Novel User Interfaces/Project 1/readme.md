@@ -1,6 +1,6 @@
 # Table of contents
 <ol>
-    <li> [Introduction](#introduction) </li>
+    <li> [Introduction](#Introduction) </li>
     <li> [Successes and Resources](#successes-and-resources) </li>
     <li> [Problems Encountered](#problems-encountered) </li>
 </ol>ol>
