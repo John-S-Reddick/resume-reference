@@ -1,9 +1,7 @@
 # Table of contents
-<ol>
-    <li> [Introduction](#Introduction) </li>
-    <li> [Successes and Resources](#successes-and-resources) </li>
-    <li> [Problems Encountered](#problems-encountered) </li>
-</ol>ol>
+[Introduction](#Introduction)
+[Successes and Resources](#successes-and-resources)
+[Problems Encountered](#problems-encountered)
 
 ## This is the introduction 
 Some introduction text, formatted in heading 2 style
