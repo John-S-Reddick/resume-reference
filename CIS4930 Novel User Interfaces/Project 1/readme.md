@@ -65,7 +65,7 @@ encountered
     </li>
 </ol>
 
-<h1>Successes</h1>
+<h1>Successes and Resources</h1>
 <ol>
     <li> <h2>GitHub</h2>
         This project has been an excellent way to learn and teach myself how to use GitHub. GitHub is an industry standard, and the oppurtunity to become familiar with it is invaluable.
