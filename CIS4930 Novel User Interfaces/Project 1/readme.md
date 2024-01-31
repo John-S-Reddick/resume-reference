@@ -22,20 +22,25 @@ This project was created by John S. Reddick. The outline of the following projec
  <a name="purpose"/> <h2><li> Purpose</h2>
             The purpose of this assignment is twofold.
              <ol>
-                 <li>* Gain experience with simple recognizers using reliable data (touch/stylus/mouse).</li>
-                 <li>* Gain experience with implementing a state-of-the-art algorithms from scratch by relying on algorithms provided in
+                 <li> -[ ] Gain experience with simple recognizers using reliable data (touch/stylus/mouse).</li>
+                 <li> -[ ] Gain experience with implementing a state-of-the-art algorithms from scratch by relying on algorithms provided in
             the research paper</li>
             </ol>
 </li>
  <a name="requirements"/> <h2><li> Requirements</h2>
-            There are two main requirements for this assignment. First, you will implement 3 $- family
-            recognizers and compare them.        
-            Train each recognizer with 1, 3, and 5 samples per symbol. Test each recognizer by writing each
+     In contrast to the directions as described in the original instructions written by Dr. Pittman and with his consent, I will
+    be using the %1 recognizer, the $Q recognizer, and Penny Pincher.
+            There are two main requirements for this assignment. 
+             -[ ] Implement 3 $- family recognizers
+                <ol><li>-[ ] $1</li><li>-[ ] $Q</li><li>-[ ] Penny Pincher</li></ol>
+             -[ ] Compare each of them.           
+             -[ ] Train each recognizer with 1, 3, and 5 samples per symbol. 
+     
+             Test each recognizer by writing each
             symbol 5 times, which should give you a good accuracy number. You should run separate
             experiments using the data you collected using a mouse vs a touch screen (if applicable). Please
             put the results of your experiment in your README file.
-            In contrast to the directions as described in the original instructions written by Dr. Pittman and with his consent, I will
-            be using the %1 recognizer, the $Q recognizer, and Penny Pincher.
+            
 </li>
 <a name="recognizers"/> <h2><li> Recognizers</h2>        
             You should test these algorithms with the following symbols: 0,1,2,3,4,5,6,7,8,9,+,-,*,t,a,n,s,c,i,
