@@ -20,7 +20,7 @@ This project was created by John S. Reddick. The outline of the following projec
 
 
  <a name="purpose"/> <h2>1. Purpose</h2>
-            The purpose of this assignment is twofold. It is first designed to give you experience with simple
+            > The purpose of this assignment is twofold. It is first designed to give you experience with simple
             recognizers using reliable data (touch/stylus/mouse). Second, it is to give you experience with
             implementing a state-of-the-art algorithms from scratch by relying on algorithms provided in
             the research paper
