@@ -40,7 +40,7 @@ This project was created by John S. Reddick. The outline of the following projec
      <ol>
     <a name="step-1"/><h3><li>Step 1 create some kind of basic canvas drawing application ^1</h3>
     <ol>
-        <li>-[ ] Create a window</li>
+        <li>-[X] Create a window</li>
         <li>-[ ] Create a canvas on which to draw, and a canvas that displays what the recognizer sees</li>
         <li>-[ ] Track mouse movements</li>
         <li>-[ ] On the bottom display which template is most likely visually</li>
