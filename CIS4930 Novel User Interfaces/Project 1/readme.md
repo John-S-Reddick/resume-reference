@@ -28,18 +28,21 @@ This project was created by John S. Reddick. The outline of the following projec
             </ol>
 </li>
  <a name="requirements"/> <h2><li> Requirements</h2>
-     In contrast to the directions as described in the original instructions written by Dr. Pittman and with his consent, I will
-    be using the %1 recognizer, the $Q recognizer, and Penny Pincher.
-            There are two main requirements for this assignment. 
-             -[ ] Implement 3 $- family recognizers
-                <ol><li>-[ ] $1</li><li>-[ ] $Q</li><li>-[ ] Penny Pincher</li></ol>
-             -[ ] Compare each of them.           
-             -[ ] Train each recognizer with 1, 3, and 5 samples per symbol. 
-     
-             Test each recognizer by writing each
-            symbol 5 times, which should give you a good accuracy number. You should run separate
-            experiments using the data you collected using a mouse vs a touch screen (if applicable). Please
-            put the results of your experiment in your README file.
+     Implement the Following Dollar Family Recognizers
+     Step 1
+    <ol>
+        <li>-[ ] $1</li>
+        <li>-[ ] $Q</li>
+        <li>-[ ] Penny Pincher</li>
+    </ol>
+    Step 2 Test each recognizer by writing each symbol 5 times, which should give you a good accuracy number
+    <ol>
+        <li>-[ ] Compare each of them.</li>
+        <li>-[ ] Train each recognizer with 1, 3, and 5 samples per symbol</li>
+        <li>-[ ] Document results of your experiment in your README file</li>
+        <li>-[ ]  Run separate experiments using the data you collected using a mouse vs a touch screen (if applicable)</li>
+    </ol>   
+           
             
 </li>
 <a name="recognizers"/> <h2><li> Recognizers</h2>        
