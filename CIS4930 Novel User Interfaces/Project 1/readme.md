@@ -1,7 +1,7 @@
 # Table of contents
-[Introduction](#Introduction)
-[Successes and Resources](#successes-and-resources)
-[Problems Encountered](#problems-encountered)
+1. [Introduction](#Introduction)
+2. [Successes and Resources](#successes-and-resources)
+3. [Problems Encountered](#problems-encountered)
 
 ## This is the introduction 
 Some introduction text, formatted in heading 2 style
