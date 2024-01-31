@@ -73,11 +73,10 @@ This project was created by John S. Reddick. The outline of the following projec
             capabilities of C# with WPF, Python with TK, Java with Swing, or HTML/JS/CSS. No choice is
             inherently better than others.
         <li>
-            Please see
+            Dr. Pittman reccomends
             https://www.eecs.ucf.edu/isuelab/demo/stochastic-resampling/ or
             https://depts.washington.edu/acelab/proj/dollar/index.html for examples of similar canvas
-            implementations which you can work from. Reach out to the instructor if more examples are
-            needed.
+            implementations, or ask Dr. Pittman if more examples are needed.
         </li>            
     </ol>
 </li> 
