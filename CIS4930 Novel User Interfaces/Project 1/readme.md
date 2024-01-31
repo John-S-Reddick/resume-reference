@@ -2,6 +2,10 @@
 1. [Introduction](#Introduction)
     1. [Purpose](#purpose)
     2. [Requirements](#requirements)
+        1. [Step 1](#step-1)
+        2. [Step 2](#step-2)
+        3. [Step 3](#step-3)
+        4. [Step 4](#step-4)
     3. [Footnotes](#footnotes)
     4. [Recognizers](#recognizers)    
     5. [Implementation](#implementation)
@@ -34,7 +38,7 @@ This project was created by John S. Reddick. The outline of the following projec
 </li>
  <a name="requirements"/> <h2><li> Requirements</h2>
      <ol>
-    <h3><li>Step 1 create some kind of basic canvas drawing application ^1</h3>
+    <a name="step-1"/><h3><li>Step 1 create some kind of basic canvas drawing application ^1</h3>
     <ol>
         <li>-[ ] Create a window</li>
         <li>-[ ] Create a canvas on which to draw, and a canvas that displays what the recognizer sees</li>
@@ -48,21 +52,21 @@ This project was created by John S. Reddick. The outline of the following projec
         <li>-[ ] Undo previous written strokes</li>
     </ol>
     </li>
-    <h3><li>Step 2 Implement Dollar Family Recognizers</h3>    
+    <a name="step-2"/><h3><li>Step 2 Implement Dollar Family Recognizers</h3>    
     <ol>
         <li>-[ ] $1</li>
         <li>-[ ] $Q</li>
         <li>-[ ] Penny Pincher</li>
     </ol>
     </li>
-    <h3><li>Step 3 Training</h3> Test each recognizer by writing each symbol 5 times, which should give you a good accuracy number
+    <a name="step-3"/><h3><li>Step 3 Training</h3> Test each recognizer by writing each symbol 5 times, which should give you a good accuracy number
     <ol>
         <li>-[ ] Train each recognizer with with the following symbols: 0,1,2,3,4,5,6,7,8,9,+,-,*,t,a,n,s,c,i</li>
         <li>-[ ] Include the square root symbol and some more oddball symbols of your own choosing</li>
         <li>-[ ] Train each recognizer with 1, 3, and 5 samples per symbol</li>
     </ol>
     </li>
-     <h3><li>Step 4 Documentation and Comparison</h3> Test each recognizer by writing each symbol 5 times, which should give you a good accuracy number
+    <a name="step-4"/><h3><li>Step 4 Documentation and Comparison</h3> Test each recognizer by writing each symbol 5 times, which should give you a good accuracy number
      <ol>
          <li>-[ ] Document results of your experiment in your README file</li>
          <li>-[ ] Compare each of them.</li>
