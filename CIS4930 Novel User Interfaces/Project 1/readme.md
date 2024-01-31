@@ -2,8 +2,8 @@
 1. [Introduction](#Introduction)
     1. [Purpose](#purpose)
     2. [Requirements](#requirements)
-    3. [Recognizers](#recognizers)
-    4. [Strategy](#strategy)
+    3. [Footnotes](#footnotes)
+    4. [Recognizers](#recognizers)    
     5. [Implementation](#implementation)
     6. [Deliverables](#deliverables)
     7. [Grading and Notes](#grading-and-notes)    
@@ -66,16 +66,7 @@ This project was created by John S. Reddick. The outline of the following projec
      </ol>      
             
 </li>
-<a name="recognizers"/> <h2><li> Recognizers</h2>        
-            You should test these algorithms . I would also recommend adding 
-            (Here I will provide citations to the pages)
-            <a href="http://faculty.washington.edu/wobbrock/pubs/uist-07.01.pdf">$1</a>
-            <b/>
-            <a href="http://faculty.washington.edu/wobbrock/pubs/mobilehci-18.pdf">$Q</a>
-            <b/>
-            <a href="https://www.eecs.ucf.edu/isuelab/publications/pubs/gi2015_eugene.pdf">Penny Pincher</a>  
-</li>          
-<a name="strategy"/><h2><li> Strategy</h2>
+<a name="footnotes"/><h2><li>Footnotes</h2>
     <ol>
         <li>            
             This can be done in any programming language of your choosing, though Dr. Pittman recommends looking into
@@ -89,7 +80,17 @@ This project was created by John S. Reddick. The outline of the following projec
             needed.
         </li>            
     </ol>
-</li>  
+</li> 
+<a name="recognizers"/> <h2><li> Recognizers</h2>        
+            You should test these algorithms . I would also recommend adding 
+            (Here I will provide citations to the pages)
+            <a href="http://faculty.washington.edu/wobbrock/pubs/uist-07.01.pdf">$1</a>
+            <b/>
+            <a href="http://faculty.washington.edu/wobbrock/pubs/mobilehci-18.pdf">$Q</a>
+            <b/>
+            <a href="https://www.eecs.ucf.edu/isuelab/publications/pubs/gi2015_eugene.pdf">Penny Pincher</a>  
+</li>          
+ 
 <a name="implementation"/><h2><li> Implementation</h2>
             To  your symbol recognizers, there are some things you need to consider.
             1. You need to find a way to invoke the recognizer. You can have it run in real time or in
