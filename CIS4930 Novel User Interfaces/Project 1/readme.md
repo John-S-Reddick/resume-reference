@@ -33,26 +33,28 @@ This project was created by John S. Reddick. The outline of the following projec
             </ol>
 </li>
  <a name="requirements"/> <h2><li> Requirements</h2>
-     <h3>Step 1</h3> Implement the Following Dollar Family Recognizers     
+    <h3>Step 2 Implement Dollar Family Recognizers</h3>    
     <ol>
         <li>-[ ] $1</li>
         <li>-[ ] $Q</li>
         <li>-[ ] Penny Pincher</li>
     </ol>
-    <h3>Step 2</h3> Test each recognizer by writing each symbol 5 times, which should give you a good accuracy number
+    <h3>Step 3 Training</h3> Test each recognizer by writing each symbol 5 times, which should give you a good accuracy number
     <ol>
-        <li>-[ ] Compare each of them.</li>
+        <li>-[ ] Train each recognizer with with the following symbols: 0,1,2,3,4,5,6,7,8,9,+,-,*,t,a,n,s,c,i</li>
+        <li>-[ ] Include the square root symbol and some more oddball symbols of your own choosing</li>
         <li>-[ ] Train each recognizer with 1, 3, and 5 samples per symbol</li>
-        <li>-[ ] Document results of your experiment in your README file</li>
-        <li>-[ ]  Run separate experiments using the data you collected using a mouse vs a touch screen (if applicable)</li>
-    </ol>   
-           
+    </ol>
+     <h3>Step 4 Documentation and Comparison</h3> Test each recognizer by writing each symbol 5 times, which should give you a good accuracy number
+     <ol>
+         <li>-[ ] Document results of your experiment in your README file</li>
+         <li>-[ ] Compare each of them.</li>
+         <li>-[ ] Run separate experiments using the data you collected using a mouse vs a touch screen (if applicable)</li>
+     </ol>      
             
 </li>
 <a name="recognizers"/> <h2><li> Recognizers</h2>        
-            You should test these algorithms with the following symbols: 0,1,2,3,4,5,6,7,8,9,+,-,*,t,a,n,s,c,i,
-            and the square root symbol. I would also recommend adding some more oddball symbols of
-            your own choosing
+            You should test these algorithms . I would also recommend adding 
             (Here I will provide citations to the pages)
             <a href="http://faculty.washington.edu/wobbrock/pubs/uist-07.01.pdf">$1</a>
             <b/>
