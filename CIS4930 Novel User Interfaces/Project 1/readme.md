@@ -18,14 +18,14 @@ This project was created by John S. Reddick. The outline of the following projec
     project description created by Corey Pittman in 2024. I have included an original copy of the instructions as written by Dr. Pittman 
     <a href="https://github.com/John-S-Reddick/resume-reference/blob/main/CIS4930%20Novel%20User%20Interfaces/Project%201/SpecialTopicsProj1.pdf">here</a>
 
-<ol>
-    <li> <a name="purpose"/><h2>Purpose</h2>
+
+<a name="purpose"/><h2>Purpose</h2>
             The purpose of this assignment is twofold. It is first designed to give you experience with simple
             recognizers using reliable data (touch/stylus/mouse). Second, it is to give you experience with
             implementing a state-of-the-art algorithms from scratch by relying on algorithms provided in
             the research paper
-    </li>    
-    <li> <a name="requirements"/> <h2>Requirements</h2>
+            
+ <a name="requirements"/> <h2>Requirements</h2>
             There are two main requirements for this assignment. First, you will implement 3 $- family
             recognizers and compare them.        
             Train each recognizer with 1, 3, and 5 samples per symbol. Test each recognizer by writing each
@@ -34,8 +34,8 @@ This project was created by John S. Reddick. The outline of the following projec
             put the results of your experiment in your README file.
             In contrast to the directions as described in the original instructions written by Dr. Pittman and with his consent, I will
             be using the %1 recognizer, the $Q recognizer, and Penny Pincher.
-    </li>
-    <li> <a name="recognizers"/> <h2>Recognizers</h2>        
+            
+<a name="recognizers"/> <h2>Recognizers</h2>        
             You should test these algorithms with the following symbols: 0,1,2,3,4,5,6,7,8,9,+,-,*,t,a,n,s,c,i,
             and the square root symbol. I would also recommend adding some more oddball symbols of
             your own choosing
@@ -44,9 +44,9 @@ This project was created by John S. Reddick. The outline of the following projec
             <b/>
             <a href="http://faculty.washington.edu/wobbrock/pubs/mobilehci-18.pdf">$Q</a>
             <b/>
-            <a href="https://www.eecs.ucf.edu/isuelab/publications/pubs/gi2015_eugene.pdf">Penny Pincher</a>            
-    </li>
-    <li> <a name="strategy"/><h2>Strategy</h2>
+            <a href="https://www.eecs.ucf.edu/isuelab/publications/pubs/gi2015_eugene.pdf">Penny Pincher</a>  
+            
+<a name="strategy"/><h2>Strategy</h2>
             The first step of this project is to create some kind of basic canvas drawing application. This can
             be done in any programming language of your choosing, though I recommend looking into the
             capabilities of C# with WPF, Python with TK, Java with Swing, or HTML/JS/CSS. No choice is
@@ -56,27 +56,25 @@ This project was created by John S. Reddick. The outline of the following projec
             https://depts.washington.edu/acelab/proj/dollar/index.html for examples of similar canvas
             implementations which you can work from. Reach out to the instructor if more examples are
             needed.
-    </li>
-    <li> <a name="implementation"/><h2>Implementation</h2>
+            
+<a name="implementation"/><h2>Implementation</h2>
             To  your symbol recognizers, there are some things you need to consider.
             1. You need to find a way to invoke the recognizer. You can have it run in real time or in
             batch mode (by pressing a button or doing a different, heuristically determined gesture)            
             2. You will need to show recognition results to the user. A simple text box is fine but if you
             want to be more elaborate feel free to do so.
-    </li>
-    <li> <a name="deliverables"/><h2>Deliverables</h2>
+            
+<a name="deliverables"/><h2>Deliverables</h2>
             Upload your source code to Canvas. Please include a README file describing what works and
             what does not, the results of your experiments, any known bugs, and any problems you
             encountered
-    </li>
-    <li> <a name="grading-and-notes"/><h2>Grading and Notes</h2>
+            
+<a name="grading-and-notes"/><h2>Grading and Notes</h2>
             Please include a README file describing what works and
             what does not, the results of your experiments, any known bugs, and any problems you
             encountered
             80% correct implementation of the recognizers
             20% documentation
-    </li>
-</ol>
 
 <a name="successes-and-resources"/>
 <h1>Successes and Resources</h1>
