@@ -1,8 +1,7 @@
 
-1. [Example](#Introduction)
-2. [Example2](#Successes and resources)
-3. [Third Example](#third-example)
-4. [Fourth Example](#fourth-examplehttpwwwfourthexamplecom)
+1. [Introduction](#Introduction)
+2. [Successes and Resources](#Successes%20and%20resources)
+3. [Problems encountered](#Problems%20Encountered)
 
 
 <h1>Introduction</h1>
