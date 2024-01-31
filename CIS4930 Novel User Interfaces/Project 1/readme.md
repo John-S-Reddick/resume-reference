@@ -1,3 +1,10 @@
+
+1. [Example](#example)
+2. [Example2](#example2)
+3. [Third Example](#third-example)
+4. [Fourth Example](#fourth-examplehttpwwwfourthexamplecom)
+
+
 <h1>Introduction</h1>
 <h1>Project 1 – Exploring $-family recognizers</h1>
 <h5><a href="https://canvas.unf.edu/courses/100860/assignments/1328145.com]">Submission</a> Due: 2/8/24 11:59 pm<h5/>  
