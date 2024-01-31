@@ -28,14 +28,13 @@ This project was created by John S. Reddick. The outline of the following projec
             </ol>
 </li>
  <a name="requirements"/> <h2><li> Requirements</h2>
-     Implement the Following Dollar Family Recognizers
-     Step 1
+     <h3>Step 1</h3> Implement the Following Dollar Family Recognizers     
     <ol>
         <li>-[ ] $1</li>
         <li>-[ ] $Q</li>
         <li>-[ ] Penny Pincher</li>
     </ol>
-    Step 2 Test each recognizer by writing each symbol 5 times, which should give you a good accuracy number
+    <h3>Step 2</h3> Test each recognizer by writing each symbol 5 times, which should give you a good accuracy number
     <ol>
         <li>-[ ] Compare each of them.</li>
         <li>-[ ] Train each recognizer with 1, 3, and 5 samples per symbol</li>
