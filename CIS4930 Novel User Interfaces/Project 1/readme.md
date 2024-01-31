@@ -12,7 +12,7 @@ This project was created by John S. Reddick. The outline of the following projec
     <a href="https://github.com/John-S-Reddick/resume-reference/blob/main/CIS4930%20Novel%20User%20Interfaces/Project%201/SpecialTopicsProj1.pdf">here</a>
 
 <ol>
-    <li> ### Purpose
+    <li> <h2>Requirements</h2>
             The purpose of this assignment is twofold. It is first designed to give you experience with simple
             recognizers using reliable data (touch/stylus/mouse). Second, it is to give you experience with
             implementing a state-of-the-art algorithms from scratch by relying on algorithms provided in
@@ -70,7 +70,7 @@ encountered
     </li>
 </ol>
 
-<a name="successes-and-resources"></a>
+<a name="successes-and-resources"/>
 <h1>Successes and Resources</h1>
 <ol>
     <li> <h2>GitHub</h2>
@@ -86,7 +86,7 @@ encountered
     </li>
 </ol>
 
-<a name="problems-encountered"></a>
+<a name="problems-encountered"/>
 <h1>Problems encountered</h1>
 <ol>
     <li> <h2>Qt and C++</h2>
