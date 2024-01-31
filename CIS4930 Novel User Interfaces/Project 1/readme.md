@@ -3,18 +3,6 @@
 2. [Successes and Resources](#successes-and-resources)
 3. [Problems Encountered](#problems-encountered)
 
-## This is the introduction 
-Some introduction text, formatted in heading 2 style
-
-## Some paragraph <a name="paragraph1"></a>
-The first paragraph text
-
-### Sub paragraph <a name="subparagraph1"></a>
-This is a sub paragraph, formatted in heading 3 style
-
-## Another paragraph <a name="paragraph2"></a>
-The second paragraph text
-
 ## Introduction
 <h1>Project 1 – Exploring $-family recognizers</h1>
 <h5><a href="https://canvas.unf.edu/courses/100860/assignments/1328145.com]">Submission</a> Due: 2/8/24 11:59 pm<h5/>  
@@ -24,7 +12,7 @@ This project was created by John S. Reddick. The outline of the following projec
     <a href="https://github.com/John-S-Reddick/resume-reference/blob/main/CIS4930%20Novel%20User%20Interfaces/Project%201/SpecialTopicsProj1.pdf">here</a>
 
 <ol>
-    <li> <a name="introduction"></a> <h2>Purpose</h2>
+    <li> ### Purpose
             The purpose of this assignment is twofold. It is first designed to give you experience with simple
             recognizers using reliable data (touch/stylus/mouse). Second, it is to give you experience with
             implementing a state-of-the-art algorithms from scratch by relying on algorithms provided in
