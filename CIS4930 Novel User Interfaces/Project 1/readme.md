@@ -1,6 +1,6 @@
 
 1. [Introduction](#Introduction)
-2. [Successes and Resources](#Successes and Resources)
+2. [Successes and Resources](#Successes%20and%20Resources)
 3. [Problems encountered](#Problems%20Encountered)
 
 
