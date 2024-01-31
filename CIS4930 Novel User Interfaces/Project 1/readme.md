@@ -1,10 +1,23 @@
+# Table of contents
+<ol>
+    <li> [Introduction](#introduction) </li>
+    <li> [Successes and Resources](#successes-and-resources) </li>
+    <li> [Problems Encountered](#problems-encountered) </li>
+</ol>ol>
 
-1. [Introduction](#Introduction)
-2. [Successes and Resources](#Successes%20and%20Resources)
-3. [Problems encountered](#Problems%20Encountered)
+## This is the introduction 
+Some introduction text, formatted in heading 2 style
 
+## Some paragraph <a name="paragraph1"></a>
+The first paragraph text
 
-<h1>Introduction</h1>
+### Sub paragraph <a name="subparagraph1"></a>
+This is a sub paragraph, formatted in heading 3 style
+
+## Another paragraph <a name="paragraph2"></a>
+The second paragraph text
+
+<a name="introduction"><h1>Introduction</h1></a>
 <h1>Project 1 – Exploring $-family recognizers</h1>
 <h5><a href="https://canvas.unf.edu/courses/100860/assignments/1328145.com]">Submission</a> Due: 2/8/24 11:59 pm<h5/>  
 
@@ -13,7 +26,7 @@ This project was created by John S. Reddick. The outline of the following projec
     <a href="https://github.com/John-S-Reddick/resume-reference/blob/main/CIS4930%20Novel%20User%20Interfaces/Project%201/SpecialTopicsProj1.pdf">here</a>
 
 <ol>
-    <li> <h2>Purpose</h2>
+    <li> <a name="introduction"></a> <h2>Purpose</h2>
             The purpose of this assignment is twofold. It is first designed to give you experience with simple
             recognizers using reliable data (touch/stylus/mouse). Second, it is to give you experience with
             implementing a state-of-the-art algorithms from scratch by relying on algorithms provided in
@@ -71,6 +84,7 @@ encountered
     </li>
 </ol>
 
+<a name="successes-and-resources"></a>
 <h1>Successes and Resources</h1>
 <ol>
     <li> <h2>GitHub</h2>
@@ -86,6 +100,7 @@ encountered
     </li>
 </ol>
 
+<a name="problems-encountered"></a>
 <h1>Problems encountered</h1>
 <ol>
     <li> <h2>Qt and C++</h2>
