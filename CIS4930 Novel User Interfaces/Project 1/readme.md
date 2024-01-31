@@ -33,6 +33,19 @@ This project was created by John S. Reddick. The outline of the following projec
             </ol>
 </li>
  <a name="requirements"/> <h2><li> Requirements</h2>
+    <h3>Step 1 create some kind of basic canvas drawing application ^1</h3>
+    <ol>
+        <li>-[ ] Create a window</li>
+        <li>-[ ] Create a canvas on which to draw, and a canvas that displays what the recognizer sees</li>
+        <li>-[ ] Track mouse movements</li>
+        <li>-[ ] On the bottom display which template is most likely visually</li>
+    </ol>
+     <h4>Create buttons or widgets to do the following:</h4>
+    <ol>
+        <li>-[ ] Clear the canvas</li>
+        <li>-[ ] Trigger recognition</li>
+        <li>-[ ] Undo previous written strokes</li>
+    </ol>
     <h3>Step 2 Implement Dollar Family Recognizers</h3>    
     <ol>
         <li>-[ ] $1</li>
@@ -63,15 +76,19 @@ This project was created by John S. Reddick. The outline of the following projec
             <a href="https://www.eecs.ucf.edu/isuelab/publications/pubs/gi2015_eugene.pdf">Penny Pincher</a>  
 </li>          
 <a name="strategy"/><h2><li> Strategy</h2>
-            The first step of this project is to create some kind of basic canvas drawing application. This can
-            be done in any programming language of your choosing, though I recommend looking into the
+    <ol>
+        <li>            
+            This can be done in any programming language of your choosing, though Dr. Pittman recommends looking into
             capabilities of C# with WPF, Python with TK, Java with Swing, or HTML/JS/CSS. No choice is
-            inherently better than others. You will want to create buttons or widgets to enable the user to
-            clear the canvas, trigger recognition, and undo previous written strokes. Please see
+            inherently better than others.
+        <li>
+            Please see
             https://www.eecs.ucf.edu/isuelab/demo/stochastic-resampling/ or
             https://depts.washington.edu/acelab/proj/dollar/index.html for examples of similar canvas
             implementations which you can work from. Reach out to the instructor if more examples are
             needed.
+        </li>            
+    </ol>
 </li>  
 <a name="implementation"/><h2><li> Implementation</h2>
             To  your symbol recognizers, there are some things you need to consider.
