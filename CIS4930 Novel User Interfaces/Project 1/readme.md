@@ -99,14 +99,21 @@ This project was created by John S. Reddick. The outline of the following projec
             want to be more elaborate feel free to do so.
 </li>
 <a name="deliverables"/><h2><li> Deliverables</h2>
-            Upload your source code to Canvas. Please include a README file describing what works and
-            what does not, the results of your experiments, any known bugs, and any problems you
-            encountered
+    <ol>
+        <li>-[ ] Upload your source code to Canvas <a href="https://canvas.unf.edu/courses/100860/assignments/1328145.com]">here</a></li>
+        <li>-[X] Include a README</li>
+    </ol>
+    <h2>In the README:</h2>
+    <ol>
+        <li>-[ ] Describe what works</li>
+        <li>-[ ] Describe what doesn't work</li>
+        <li>-[ ] Results of your experiments</li>
+        <li>-[ ] Any known bugs</li>
+        <li>-[ ] Problems you encountered</li>
+        <li>-[ ] Bonus: Room for Improvement</li>
+    </ol>
 </li>
 <a name="grading-and-notes"/><h2><li> Grading and Notes</h2>
-            Please include a README file describing what works and
-            what does not, the results of your experiments, any known bugs, and any problems you
-            encountered
             80% correct implementation of the recognizers
             20% documentation
 </li>
