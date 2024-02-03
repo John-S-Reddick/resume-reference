@@ -97,7 +97,8 @@ This project was created by John S. Reddick. The outline of the following projec
             <a name="dollar-family"/> <h3>$ Family Recognizer Round-Up<a  href="https://depts.washington.edu/acelab/proj/dollar/index.html">Link</a></h3>
             <ol>
                 <a name="one-dollar"/> <h4><li>$1 Recognizer <a  href="http://faculty.washington.edu/wobbrock/pubs/uist-07.01.pdf">Link</a></h4>
-                Wobbrock, J.O., Wilson, A.D. and Li, Y. (2007). Gestures without libraries, toolkits or training: A $1 recognizer for user interface prototypes.<br>
+                Wobbrock, J.O., Wilson, A.D. and Li, Y. (2007).<br>
+                Gestures without libraries, toolkits or training: A $1 recognizer for user interface prototypes. <br>
                 Proceedings of the ACM Symposium on User Interface Software and Technology (UIST '07). Newport, Rhode Island (October 7-10, 2007).<br>
                 New York: ACM Press, pp. 159-168.<br>
                 </li>
