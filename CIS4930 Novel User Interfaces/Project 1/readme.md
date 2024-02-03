@@ -53,17 +53,18 @@ This project was created by John S. Reddick. The outline of the following projec
             <li>-[X] Track mouse click</li>
             <li>-[X] Track mouse movements</li>
             <li>-[X] Paint mouse movements on drawing canvas</li>
+            <li>-[X] Increase Stoke count on mouse click</li>
+            <li>-[X] Save raw X, Y Coordinates and stroke count to list as numpy array</li>
         </ol>
         <li> Create a canvas that displays what the recognizer sees</li>        
         <li>-[ ] On the bottom display which template is most likely visually</li>
-        <li>-[ ] Save raw X, Y Coordinates and stroke count as data points in CSV files</li>
     </ol>
      <h4>Create buttons or widgets to do the following:</h4>
     <ol>
-        <li>-[ ] Clear the canvas</li>
-        <li>-[ ] Tell the application when to save</li>
-        <li>-[ ] Trigger recognition</li>
+        <li>-[ ] Create a submit button and function to write coordinates to file</li>
         <li>-[ ] Undo previous written strokes</li>
+        <li>-[ ] Clear the canvas</li>
+        <li>-[ ] Trigger recognition</li>
     </ol>
     </li>
     <a name="step-2"/><h3><li>Step 2 Implement Dollar Family Recognizers</h3>    
