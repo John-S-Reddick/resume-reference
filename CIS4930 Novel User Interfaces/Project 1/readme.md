@@ -58,7 +58,6 @@ This project was created by John S. Reddick. The outline of the following projec
         </ol>
         <li> Create a canvas that displays what the recognizer sees</li>        
         <li>-[ ] On the bottom display which template is most likely visually</li>
-        
     </ol>
      <h4>Create buttons or widgets to do the following:</h4>
     <ol>
