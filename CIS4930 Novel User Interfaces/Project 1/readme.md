@@ -96,7 +96,7 @@ This project was created by John S. Reddick. The outline of the following projec
             You should test these algorithms . I would also recommend adding 
             (Here I will provide citations to the pages)
             <ol>
-                <a target="_blank" name="one-dollar"/> <h3><li>$1 Recognizer <a href="http://faculty.washington.edu/wobbrock/pubs/uist-07.01.pdf">Link</a></h3>
+                <a target="_blank" href="one-dollar"/> <h3><li>$1 Recognizer <a href="http://faculty.washington.edu/wobbrock/pubs/uist-07.01.pdf">Link</a></h3>
                 </li>
                 <a name="q-dollar"/> <h3><li>$Q Recognizer <a href="http://faculty.washington.edu/wobbrock/pubs/mobilehci-18.pdf">Link</a></h3>
                 </li>
