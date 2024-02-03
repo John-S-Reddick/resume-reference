@@ -180,6 +180,9 @@ This project was created by John S. Reddick. The outline of the following projec
     - Matplotlib home page <br><br>
         I can use my existing experience with Matplotlib to create viusalizations and comparisons for <a href="#step-4")>step 4</a>
     </li>
+    <a name="matplotlib"/><h2><li>MatPlotLib</h2>
+        <a href="https://pyinstaller.org/en/stable/")>PyInstaller</a> Allows my end user to run this application without having to take additional installation steps
+    </li>
 </ol>
 
 <a name="problems-encountered"/>
