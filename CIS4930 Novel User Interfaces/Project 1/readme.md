@@ -21,6 +21,7 @@
     * [Markdown Reference](#markdown)
     * [Tkinter](#tkinter)
     * [Numpy](#numpy)
+    * [Matplotlib](#matplotlib)
 3. [Problems Encountered](#problems-encountered)
     * [Qt](#qt)
 
@@ -167,12 +168,15 @@ This project was created by John S. Reddick. The outline of the following projec
         The ability to size canvases and track mouse movements was very easy. Documentation and references to resources will be included in relevent code
     </li>
     <a name="numpy"/><h2><li> Numpy</h2>
-        <a href="https://numpy.org/doc/stable/index.html#")>"Numpy</a> 
+        <a href="https://numpy.org")>"Numpy</a> 
          is the fundamental package for scientific computing in Python.
          It is a Python library that provides a multidimensional array object, various derived objects (such as masked arrays and matrices), and an assortment of routines for fast operations on
          arrays, including mathematical, logical, shape manipulation, sorting, selecting, I/O, discrete Fourier transforms, basic linear algebra, basic statistical operations, random simulation and much more."
         <h4>- Numpy home page</h4> 
-        <br><br> Numpy allows me to do quick and in depth mathematics on my data, and make plotting it easy!
+        <br><br> Numpy allows me to do quick and in depth mathematics on my data, and make plotting it easy! I already have experience with NumPy so I hope to use it in conjunction with MatPlotLib to create my visualizations
+    </li>
+    <a name="matplotlib"/><h2><li>MatPlotLib</h2>
+        <a href="https://matplotlib.org")>MatPlotLib</a>
     </li>
 </ol>
 
