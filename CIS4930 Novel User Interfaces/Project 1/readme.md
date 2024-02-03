@@ -7,7 +7,10 @@
         3. [Step 3](#step-3)
         4. [Step 4](#step-4)
     3. [Footnotes](#footnotes)
-    4. [Recognizers](#recognizers)    
+    4. [Recognizers](#recognizers)
+        1. [$1](#one-dollar)
+        2. [$Q](#q-dollar)
+        3. [Penny Pincher](#q-dollar)
     5. [Implementation](#implementation)
     6. [Deliverables](#deliverables)
     7. [Grading and Notes](#grading-and-notes)    
@@ -92,6 +95,18 @@ This project was created by John S. Reddick. The outline of the following projec
 <a name="recognizers"/> <h2><li> Recognizers</h2>        
             You should test these algorithms . I would also recommend adding 
             (Here I will provide citations to the pages)
+            <ol>
+                <a name="one-dollar"/> <h3><li>$1 Recognizer </h3>
+                </li>
+                <a name="q-dollar"/> <h3><li>$Q Recognizer </h3>
+                </li>
+                <a name="penny-pincher"/><h3><li>Penny Pincher Recognizer </h3>
+
+                </li>     
+            </ol>
+
+
+
             <a href="http://faculty.washington.edu/wobbrock/pubs/uist-07.01.pdf">$1</a>
             <b/>
             <a href="http://faculty.washington.edu/wobbrock/pubs/mobilehci-18.pdf">$Q</a>
