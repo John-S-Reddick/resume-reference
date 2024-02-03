@@ -97,18 +97,16 @@ This project was created by John S. Reddick. The outline of the following projec
             <a name="dollar-family"/> <h3>$ Family Recognizer Round-Up <a  href="https://depts.washington.edu/acelab/proj/dollar/index.html">Link</a></h3>
             <ol>
                 <a name="one-dollar"/> <h4><li>$1 Recognizer <a  href="http://faculty.washington.edu/wobbrock/pubs/uist-07.01.pdf">Link</a></h4>
-                Wobbrock, J.O., Wilson, A.D. and Li, Y. (2007).<br>
+                <a  href="https://dl.acm.org/doi/10.1145/1294211.1294238">DOI</a> Wobbrock, J.O., Wilson, A.D. and Li, Y. (2007).<br>
                 Gestures without libraries, toolkits or training: A $1 recognizer for user interface prototypes. <br>
                 Proceedings of the ACM Symposium on User Interface Software and Technology (UIST '07). Newport, Rhode Island (October 7-10, 2007).<br>
                 New York: ACM Press, pp. 159-168.<br>
-                <a  href="https://dl.acm.org/doi/10.1145/1294211.1294238">DOI</a>
                 </li>
                 <a name="q-dollar"/> <h4><li>$Q Recognizer <a href="http://faculty.washington.edu/wobbrock/pubs/mobilehci-18.pdf">Link</a></h4>
-                Vatavu, R.-D., Anthony, L. and Wobbrock, J.O. (2018).<br>
+                <a  href="https://dl.acm.org/doi/10.1145/3229434.3229465">DOI</a> Vatavu, R.-D., Anthony, L. and Wobbrock, J.O. (2018).<br>
                 $Q: A super-quick, articulation-invariant stroke-gesture recognizer for low-resource devices.<br>
                 Proceedings of the ACM Conference on Human-Computer Interaction with Mobile Devices and Services (MobileHCI '18).<br>
                 Barcelona, Spain (September 3-6, 2018). New York: ACM Press. Article No. 23.<br>
-                <a  href="https://dl.acm.org/doi/10.1145/3229434.3229465">DOI</a>
                 </li>
                 <a name="penny-pincher"/><h4><li>Penny Pincher Recognizer <a href="https://www.eecs.ucf.edu/isuelab/publications/pubs/gi2015_eugene.pdf">Link</a></h4>
                 </li>     
