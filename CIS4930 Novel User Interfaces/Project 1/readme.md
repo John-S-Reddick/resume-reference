@@ -8,7 +8,7 @@
         4. [Step 4](#step-4)
     3. [Footnotes](#footnotes)
     4. [Recognizers](#recognizers)
-        * [Dollar Family Recognizers](#dollar-family)
+    * [Dollar Family Recognizers](#dollar-family)
         * [$1](#one-dollar)
         * [$Q](#q-dollar)
         * [Penny Pincher](#q-dollar)
