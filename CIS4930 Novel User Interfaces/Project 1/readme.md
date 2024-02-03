@@ -61,10 +61,10 @@ This project was created by John S. Reddick. The outline of the following projec
     </ol>
      <h4>Create buttons or widgets to do the following:</h4>
     <ol>
-        <li>-[ ] Clear the canvas</li>
-        <li>-[ ] Tell the application when to save</li>
-        <li>-[ ] Trigger recognition</li>
+        <li>-[ ] Create a submit button and function to write coordinates to file</li>
         <li>-[ ] Undo previous written strokes</li>
+        <li>-[ ] Clear the canvas</li>
+        <li>-[ ] Trigger recognition</li>
     </ol>
     </li>
     <a name="step-2"/><h3><li>Step 2 Implement Dollar Family Recognizers</h3>    
