@@ -21,47 +21,43 @@
 
 ## Introduction
 <h1>Project 1 – Exploring $-family recognizers</h1>
-<a href="https://canvas.unf.edu/courses/100860/assignments/1328145.com]">Submission</a> Due: 2/8/24 11:59 pm<h5/>  
+<h5><a href="https://canvas.unf.edu/courses/100860/assignments/1328145.com]">Submission</a> Due: 2/8/24 11:59 pm<h5/>  
 
 This project was created by John S. Reddick. The outline of the following project requirements are adapted from the 
     project description created by Corey Pittman in 2024. I have included an original copy of the instructions as written by Dr. Pittman 
     <a href="https://github.com/John-S-Reddick/resume-reference/blob/main/CIS4930%20Novel%20User%20Interfaces/Project%201/SpecialTopicsProj1.pdf">here</a>
 
 <ol>
-    <li>
-     <a name="purpose"/> <h2><li> Purpose</h2>
-                The purpose of this assignment is twofold.
-                 <ol>
-                     <li> -[ ] Gain experience with simple recognizers using reliable data (touch/stylus/mouse).</li>
-                     <li> -[ ] Gain experience with implementing a state-of-the-art algorithms from scratch by relying on algorithms provided in
-                the research paper</li>
-                </ol>
+ <a name="purpose"/> <h2><li> Purpose</h2>
+            The purpose of this assignment is twofold.
+             <ol>
+                 <li> -[ ] Gain experience with simple recognizers using reliable data (touch/stylus/mouse).</li>
+                 <li> -[ ] Gain experience with implementing a state-of-the-art algorithms from scratch by relying on algorithms provided in
+            the research paper</li>
+            </ol>
+</li>
+ <a name="requirements"/> <h2><li> Requirements</h2>
+     <ol>
+    <a name="step-1"/><h3><li>Step 1 create some kind of basic canvas drawing application ^1</h3>
+    <ol>
+        <li>-[X] Create a window</li>
+        <li>-[ ] Create a canvas on which to draw, and a canvas that displays what the recognizer sees</li>
+        <li>-[ ] Track mouse movements</li>
+        <li>-[ ] On the bottom display which template is most likely visually</li>
+    </ol>
+     <h4>Create buttons or widgets to do the following:</h4>
+    <ol>
+        <li>-[ ] Clear the canvas</li>
+        <li>-[ ] Trigger recognition</li>
+        <li>-[ ] Undo previous written strokes</li>
+    </ol>
     </li>
-    <li>
-     <a name="requirements"/> <h2><li> Requirements</h2>
-         <ol>
-        <a name="step-1"/><h3><li>Step 1 create some kind of basic canvas drawing application ^1</h3>
-        <ol>
-            <li>-[X] Create a window</li>
-            <li>-[ ] Create a canvas on which to draw, and a canvas that displays what the recognizer sees</li>
-            <li>-[ ] Track mouse movements</li>
-            <li>-[ ] On the bottom display which template is most likely visually</li>
-        </ol>
-            <li>
-                 <h4>Create buttons or widgets to do the following:</h4>
-                <ol>
-                    <li>-[ ] Clear the canvas</li>
-                    <li>-[ ] Trigger recognition</li>
-                    <li>-[ ] Undo previous written strokes</li>
-                </ol>
-            </li>
-        <li>
-        <a name="step-2"/><h3><li>Step 2 Implement Dollar Family Recognizers</h3>    
-        <ol>
-            <li>-[ ] $1</li>
-            <li>-[ ] $Q</li>
-            <li>-[ ] Penny Pincher</li>
-        </ol>
+    <a name="step-2"/><h3><li>Step 2 Implement Dollar Family Recognizers</h3>    
+    <ol>
+        <li>-[ ] $1</li>
+        <li>-[ ] $Q</li>
+        <li>-[ ] Penny Pincher</li>
+    </ol>
     </li>
     <a name="step-3"/><h3><li>Step 3 Training</h3> Test each recognizer by writing each symbol 5 times, which should give you a good accuracy number
     <ol>
@@ -79,7 +75,6 @@ This project was created by John S. Reddick. The outline of the following projec
      </li>
      </ol>         
 </li>
-<li>
 <a name="footnotes"/><h2><li>Footnotes</h2>
     <ol>
         <li>            
@@ -93,8 +88,7 @@ This project was created by John S. Reddick. The outline of the following projec
             implementations, Dr. Pittman offered to reccomend additional examples as needed.
         </li>            
     </ol>
-</li>
-<li>
+</li> 
 <a name="recognizers"/> <h2><li> Recognizers</h2>        
             You should test these algorithms . I would also recommend adding 
             (Here I will provide citations to the pages)
@@ -104,7 +98,7 @@ This project was created by John S. Reddick. The outline of the following projec
             <b/>
             <a href="https://www.eecs.ucf.edu/isuelab/publications/pubs/gi2015_eugene.pdf">Penny Pincher</a>  
 </li>          
-<li>
+ 
 <a name="implementation"/><h2><li> Implementation</h2>
             To  your symbol recognizers, there are some things you need to consider.
             1. You need to find a way to invoke the recognizer. You can have it run in real time or in
