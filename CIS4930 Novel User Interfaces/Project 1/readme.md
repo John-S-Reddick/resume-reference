@@ -53,6 +53,7 @@ This project was created by John S. Reddick. The outline of the following projec
             <li>-[X] Track mouse click</li>
             <li>-[X] Track mouse movements</li>
             <li>-[X] Paint mouse movements on drawing canvas</li>
+            <li>-[ ] Increase Stoke count on mouse click</li>
         </ol>
         <li> Create a canvas that displays what the recognizer sees</li>        
         <li>-[ ] On the bottom display which template is most likely visually</li>
