@@ -171,7 +171,7 @@ This project was created by John S. Reddick. The outline of the following projec
          is the fundamental package for scientific computing in Python.
          It is a Python library that provides a multidimensional array object, various derived objects (such as masked arrays and matrices), and an assortment of routines for fast operations on
          arrays, including mathematical, logical, shape manipulation, sorting, selecting, I/O, discrete Fourier transforms, basic linear algebra, basic statistical operations, random simulation and much more.
-        <br> - <h5> Numpy home page</h5> 
+        <h4>- Numpy home page</h4> 
         <br><br> Numpy allows me to do quick and in depth mathematics on my data, and make plotting it easy!
     </li>
 </ol>
