@@ -94,7 +94,7 @@ This project was created by John S. Reddick. The outline of the following projec
         </li>            
     </ol>
 <a name="recognizers"/> <h2><li> Recognizers</h2>
-            <a name="dollar-family"/> <h3>$ Family Recognizer Round-Up<a  href="https://depts.washington.edu/acelab/proj/dollar/index.html">Link</a></h3>
+            <a name="dollar-family"/> <h3>$ Family Recognizer Round-Up <a  href="https://depts.washington.edu/acelab/proj/dollar/index.html">Link</a></h3>
             <ol>
                 <a name="one-dollar"/> <h4><li>$1 Recognizer <a  href="http://faculty.washington.edu/wobbrock/pubs/uist-07.01.pdf">Link</a></h4>
                 Wobbrock, J.O., Wilson, A.D. and Li, Y. (2007).<br>
