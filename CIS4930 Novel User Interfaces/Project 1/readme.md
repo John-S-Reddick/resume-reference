@@ -176,8 +176,9 @@ This project was created by John S. Reddick. The outline of the following projec
         <br><br> Numpy allows me to do quick and in depth mathematics on my data, and make plotting it easy! I already have experience with NumPy so I hope to use it in conjunction with MatPlotLib to create my visualizations
     </li>
     <a name="matplotlib"/><h2><li>MatPlotLib</h2>
-        <a href="https://matplotlib.org")>MatPlotLib</a>  # Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. Matplotlib makes easy things easy and hard things possible. Create publication quality plots. Make interactive figures that can zoom, pan, update. Customize visual style and layout. Export to many file formats. Embed in JupyterLab and Graphical User Interfaces. Use a rich array of third-party packages built on Matplotlib.<br>
-    - Matplotlib home page
+        <a href="https://matplotlib.org")>MatPlotLib</a>is a comprehensive library for creating static, animated, and interactive visualizations in Python. Matplotlib makes easy things easy and hard things possible. Create publication quality plots. Make interactive figures that can zoom, pan, update. Customize visual style and layout. Export to many file formats. Embed in JupyterLab and Graphical User Interfaces. Use a rich array of third-party packages built on Matplotlib.<br>
+    - Matplotlib home page <br><br>
+        I can use my existing experience with Matplotlib to create viusalizations and comparisons for [step 4](#step-4)
     </li>
 </ol>
 
