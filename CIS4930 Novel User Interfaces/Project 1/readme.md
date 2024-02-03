@@ -101,6 +101,7 @@ This project was created by John S. Reddick. The outline of the following projec
                 Gestures without libraries, toolkits or training: A $1 recognizer for user interface prototypes. <br>
                 Proceedings of the ACM Symposium on User Interface Software and Technology (UIST '07). Newport, Rhode Island (October 7-10, 2007).<br>
                 New York: ACM Press, pp. 159-168.<br>
+                <a  href="https://dl.acm.org/doi/10.1145/3229434.3229465">DOI</a>
                 </li>
                 <a name="q-dollar"/> <h4><li>$Q Recognizer <a href="http://faculty.washington.edu/wobbrock/pubs/mobilehci-18.pdf">Link</a></h4>
                 Vatavu, R.-D., Anthony, L. and Wobbrock, J.O. (2018).<br>
