@@ -8,6 +8,7 @@
         4. [Step 4](#step-4)
     3. [Footnotes](#footnotes)
     4. [Recognizers](#recognizers)
+        0. [Dollar Family Recognizers](#dollar-family)
         1. [$1](#one-dollar)
         2. [$Q](#q-dollar)
         3. [Penny Pincher](#q-dollar)
@@ -93,13 +94,13 @@ This project was created by John S. Reddick. The outline of the following projec
         </li>            
     </ol>
 <a name="recognizers"/> <h2><li> Recognizers</h2>
-            <a name="one-dollar"/> <h3><li>$ Family Recognizer Round-Up <a  href="https://depts.washington.edu/acelab/proj/dollar/index.html">Link</a></h3>            
+            <a name="dollar-family"/> <h3>$ Family Recognizer Round-Up <a  href="https://depts.washington.edu/acelab/proj/dollar/index.html">Link</a></h3>            
             <ol>
-                <a name="one-dollar"/> <h3><li>$1 Recognizer <a  href="http://faculty.washington.edu/wobbrock/pubs/uist-07.01.pdf">Link</a></h3>
+                <a name="one-dollar"/> <h4><li>$1 Recognizer <a  href="http://faculty.washington.edu/wobbrock/pubs/uist-07.01.pdf">Link</a></h4>
                 </li>
-                <a name="q-dollar"/> <h3><li>$Q Recognizer <a href="http://faculty.washington.edu/wobbrock/pubs/mobilehci-18.pdf">Link</a></h3>
+                <a name="q-dollar"/> <h4><li>$Q Recognizer <a href="http://faculty.washington.edu/wobbrock/pubs/mobilehci-18.pdf">Link</a></h4>
                 </li>
-                <a name="penny-pincher"/><h3><li>Penny Pincher Recognizer <a href="https://www.eecs.ucf.edu/isuelab/publications/pubs/gi2015_eugene.pdf">Link</a></h3>
+                <a name="penny-pincher"/><h4><li>Penny Pincher Recognizer <a href="https://www.eecs.ucf.edu/isuelab/publications/pubs/gi2015_eugene.pdf">Link</a></h4>
                 </li>     
             </ol>
 <a name="implementation"/><h2><li> Implementation</h2>
