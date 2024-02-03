@@ -41,7 +41,7 @@ This project was created by John S. Reddick. The outline of the following projec
 
  <a name="requirements"/> <h2><li> Requirements</h2>
      <ol>
-    <a target="_blank" name="step-1"/><h3><li>Step 1 create some kind of basic canvas drawing application ^1</h3>
+    <a name="step-1"/><h3><li>Step 1 create some kind of basic canvas drawing application ^1</h3>
     <ol>
         <li>-[X] Create a window</li>
         <li>-[ ] Create a canvas on which to draw, and a canvas that displays what the recognizer sees</li>
@@ -96,7 +96,7 @@ This project was created by John S. Reddick. The outline of the following projec
             You should test these algorithms . I would also recommend adding 
             (Here I will provide citations to the pages)
             <ol>
-                <a name="one-dollar"/> <h3><li>$1 Recognizer <a href="http://faculty.washington.edu/wobbrock/pubs/uist-07.01.pdf">Link</a></h3>
+                <a target="_blank" name="one-dollar"/> <h3><li>$1 Recognizer <a href="http://faculty.washington.edu/wobbrock/pubs/uist-07.01.pdf">Link</a></h3>
                 </li>
                 <a name="q-dollar"/> <h3><li>$Q Recognizer <a href="http://faculty.washington.edu/wobbrock/pubs/mobilehci-18.pdf">Link</a></h3>
                 </li>
