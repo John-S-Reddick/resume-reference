@@ -41,7 +41,7 @@ This project was created by John S. Reddick. The outline of the following projec
 
  <a name="requirements"/> <h2><li> Requirements</h2>
      <ol>
-    <a name="step-1"/><h3><li>Step 1 create some kind of basic canvas drawing application ^1</h3>
+    <a target="_blank" name="step-1"/><h3><li>Step 1 create some kind of basic canvas drawing application ^1</h3>
     <ol>
         <li>-[X] Create a window</li>
         <li>-[ ] Create a canvas on which to draw, and a canvas that displays what the recognizer sees</li>
