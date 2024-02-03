@@ -96,23 +96,13 @@ This project was created by John S. Reddick. The outline of the following projec
             You should test these algorithms . I would also recommend adding 
             (Here I will provide citations to the pages)
             <ol>
-                <a name="one-dollar"/> <h3><li>$1 Recognizer </h3>
+                <a name="one-dollar"/> <h3><li>$1 Recognizer <a href="http://faculty.washington.edu/wobbrock/pubs/uist-07.01.pdf">Link</a></h3>
                 </li>
-                <a name="q-dollar"/> <h3><li>$Q Recognizer </h3>
+                <a name="q-dollar"/> <h3><li>$Q Recognizer <a href="http://faculty.washington.edu/wobbrock/pubs/mobilehci-18.pdf">Link</a></h3>
                 </li>
-                <a name="penny-pincher"/><h3><li>Penny Pincher Recognizer </h3>
-
+                <a name="penny-pincher"/><h3><li>Penny Pincher Recognizer <a href="https://www.eecs.ucf.edu/isuelab/publications/pubs/gi2015_eugene.pdf">Link</a></h3>
                 </li>     
             </ol>
-
-
-
-            <a href="http://faculty.washington.edu/wobbrock/pubs/uist-07.01.pdf">$1</a>
-            <b/>
-            <a href="http://faculty.washington.edu/wobbrock/pubs/mobilehci-18.pdf">$Q</a>
-            <b/>
-            <a href="https://www.eecs.ucf.edu/isuelab/publications/pubs/gi2015_eugene.pdf">Penny Pincher</a>  
-
 <a name="implementation"/><h2><li> Implementation</h2>
             To  your symbol recognizers, there are some things you need to consider.
             1. You need to find a way to invoke the recognizer. You can have it run in real time or in
