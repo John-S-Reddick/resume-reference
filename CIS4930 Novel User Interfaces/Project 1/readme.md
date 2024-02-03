@@ -24,11 +24,11 @@
 
 ## Introduction
 <h1>Project 1 – Exploring $-family recognizers</h1>
-<h5><a target="_blank" href="https://canvas.unf.edu/courses/100860/assignments/1328145.com]">Submission</a> Due: 2/8/24 11:59 pm<h5/>  
+<h5><a href="https://canvas.unf.edu/courses/100860/assignments/1328145.com]">Submission</a> Due: 2/8/24 11:59 pm<h5/>  
 
 This project was created by John S. Reddick. The outline of the following project requirements are adapted from the 
     project description created by Corey Pittman in 2024. I have included an original copy of the instructions as written by Dr. Pittman 
-    <a  href="https://github.com/John-S-Reddick/resume-reference/blob/main/CIS4930%20Novel%20User%20Interfaces/Project%201/SpecialTopicsProj1.pdf" target="_blank">here</a>
+    <a href="https://github.com/John-S-Reddick/resume-reference/blob/main/CIS4930%20Novel%20User%20Interfaces/Project%201/SpecialTopicsProj1.pdf" >here</a>
 
 <ol>
  <a name="purpose"/> <h2><li> Purpose</h2>
@@ -96,11 +96,11 @@ This project was created by John S. Reddick. The outline of the following projec
             You should test these algorithms . I would also recommend adding 
             (Here I will provide citations to the pages)
             <ol>
-                <a name="one-dollar"/> <h3><li>$1 Recognizer <a target="_blank" target="_blank" href="http://faculty.washington.edu/wobbrock/pubs/uist-07.01.pdf">Link</a></h3>
+                <a name="one-dollar"/> <h3><li>$1 Recognizer <a  href="http://faculty.washington.edu/wobbrock/pubs/uist-07.01.pdf">Link</a></h3>
                 </li>
-                <a name="q-dollar"/> <h3><li>$Q Recognizer <a target="_blank" href="http://faculty.washington.edu/wobbrock/pubs/mobilehci-18.pdf">Link</a></h3>
+                <a name="q-dollar"/> <h3><li>$Q Recognizer <a href="http://faculty.washington.edu/wobbrock/pubs/mobilehci-18.pdf">Link</a></h3>
                 </li>
-                <a name="penny-pincher"/><h3><li>Penny Pincher Recognizer <a target="_blank" href="https://www.eecs.ucf.edu/isuelab/publications/pubs/gi2015_eugene.pdf">Link</a></h3>
+                <a name="penny-pincher"/><h3><li>Penny Pincher Recognizer <a href="https://www.eecs.ucf.edu/isuelab/publications/pubs/gi2015_eugene.pdf">Link</a></h3>
                 </li>     
             </ol>
 <a name="implementation"/><h2><li> Implementation</h2>
@@ -112,7 +112,7 @@ This project was created by John S. Reddick. The outline of the following projec
 
 <a name="deliverables"/><h2><li> Deliverables</h2>
     <ol>
-        <li>-[ ] Upload your source code to Canvas <a target="_blank" href="https://canvas.unf.edu/courses/100860/assignments/1328145.com]">here</a></li>
+        <li>-[ ] Upload your source code to Canvas <a href="https://canvas.unf.edu/courses/100860/assignments/1328145.com]">here</a></li>
         <li>-[X] Include a README</li>
     </ol>
     <h2>In the README:</h2>
@@ -140,14 +140,14 @@ This project was created by John S. Reddick. The outline of the following projec
         Over the course of this project I will be out of town and away from my primary development workstation, but my laptop will be able to make use of the repository for seamless development.
     </li>
     <a name="jet-brains"/><h2><li> Jet Brains</h2>
-        I originally used <a target="_blank" href="https://www.jetbrains.com/clion/download/#section=windows">CLion</a> to develop with C++, but have since switched to JetBrain's
-        <a target="_blank" href="https://www.jetbrains.com/pycharm/download/">PyCharm</a> for development. These have been massive successes and make for easy integration with GitHub,
+        I originally used <a href="https://www.jetbrains.com/clion/download/#section=windows">CLion</a> to develop with C++, but have since switched to JetBrain's
+        <a href="https://www.jetbrains.com/pycharm/download/">PyCharm</a> for development. These have been massive successes and make for easy integration with GitHub,
         allowing me to push updates to the repository through graphical mouse based interface, and through the command line.
     </li>
     <a name="markdown"/><h2><li> Markdown Reference</h2>
-        The markdown reference guide <a target="_blank" href="https://www.markdownguide.org/basic-syntax/")>here</a> has allowed me to document my readme in style while also empowering this readme
+        The markdown reference guide <a href="https://www.markdownguide.org/basic-syntax/")>here</a> has allowed me to document my readme in style while also empowering this readme
         to act as a repository for useful links for my current and future self. To anyone who comes across this project in the future. My table of contents is from 
-        <a target="_blank" href="https://stackoverflow.com/questions/11948245/markdown-to-create-pages-and-table-of-contents#27953547")>this</a> Stack exchange article.
+        <a href="https://stackoverflow.com/questions/11948245/markdown-to-create-pages-and-table-of-contents#27953547")>this</a> Stack exchange article.
         If you want a fancy readme, call it readme.md and follow the link! Much fancier than readme.me (or even readme.txt)
     </li>
     <a name="tkinter"/><h2><li> Tkinter</h2>
