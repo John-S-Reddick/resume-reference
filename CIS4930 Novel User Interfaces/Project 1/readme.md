@@ -92,9 +92,8 @@ This project was created by John S. Reddick. The outline of the following projec
             implementations, Dr. Pittman offered to reccomend additional examples as needed.
         </li>            
     </ol>
-<a name="recognizers"/> <h2><li> Recognizers</h2>        
-            You should test these algorithms . I would also recommend adding 
-            (Here I will provide citations to the pages)
+<a name="recognizers"/> <h2><li> Recognizers</h2>
+            <a name="one-dollar"/> <h3><li>$ Family Recognizer Round-Up <a  href="https://depts.washington.edu/acelab/proj/dollar/index.html">Link</a></h3>            
             <ol>
                 <a name="one-dollar"/> <h3><li>$1 Recognizer <a  href="http://faculty.washington.edu/wobbrock/pubs/uist-07.01.pdf">Link</a></h3>
                 </li>
