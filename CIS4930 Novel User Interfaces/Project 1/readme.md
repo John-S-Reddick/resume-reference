@@ -110,8 +110,8 @@ This project was created by John S. Reddick. The outline of the following projec
                 </li>
                 <a name="penny-pincher"/><h4><li>Penny Pincher Recognizer <a href="https://www.eecs.ucf.edu/isuelab/publications/pubs/gi2015_eugene.pdf">Link</a></h4>
                 <a  href="https://dl.acm.org/doi/10.5555/2788890.2788925">DOI</a> Eugene M. Taranta, II and Joseph J. LaViola, Jr. (2015). <br>
-                Penny Pincher: A Blazing Fast, Highly Accurate $-family <br>
-                Recognizer. In Proc. of GI ’15. 195–202 <br>
+                Penny Pincher: A Blazing Fast, Highly Accurate $-family Recognizer. <br>
+                In Proc. of GI ’15. 195–202 <br>
                 </li>     
             </ol>
 <a name="implementation"/><h2><li> Implementation</h2>
