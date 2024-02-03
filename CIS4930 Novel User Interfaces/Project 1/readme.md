@@ -101,13 +101,13 @@ This project was created by John S. Reddick. The outline of the following projec
                 Gestures without libraries, toolkits or training: A $1 recognizer for user interface prototypes. <br>
                 Proceedings of the ACM Symposium on User Interface Software and Technology (UIST '07). Newport, Rhode Island (October 7-10, 2007).<br>
                 New York: ACM Press, pp. 159-168.<br>
-                <a  href="https://dl.acm.org/doi/10.1145/3229434.3229465">DOI</a>
                 </li>
                 <a name="q-dollar"/> <h4><li>$Q Recognizer <a href="http://faculty.washington.edu/wobbrock/pubs/mobilehci-18.pdf">Link</a></h4>
                 Vatavu, R.-D., Anthony, L. and Wobbrock, J.O. (2018).<br>
                 $Q: A super-quick, articulation-invariant stroke-gesture recognizer for low-resource devices.<br>
                 Proceedings of the ACM Conference on Human-Computer Interaction with Mobile Devices and Services (MobileHCI '18).<br>
                 Barcelona, Spain (September 3-6, 2018). New York: ACM Press. Article No. 23.<br>
+                <a  href="https://dl.acm.org/doi/10.1145/3229434.3229465">DOI</a>
                 </li>
                 <a name="penny-pincher"/><h4><li>Penny Pincher Recognizer <a href="https://www.eecs.ucf.edu/isuelab/publications/pubs/gi2015_eugene.pdf">Link</a></h4>
                 </li>     
