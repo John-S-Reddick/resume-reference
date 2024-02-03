@@ -28,7 +28,7 @@
 
 This project was created by John S. Reddick. The outline of the following project requirements are adapted from the 
     project description created by Corey Pittman in 2024. I have included an original copy of the instructions as written by Dr. Pittman 
-    <a target="_blank" href="https://github.com/John-S-Reddick/resume-reference/blob/main/CIS4930%20Novel%20User%20Interfaces/Project%201/SpecialTopicsProj1.pdf">here</a>
+    <a  href="https://github.com/John-S-Reddick/resume-reference/blob/main/CIS4930%20Novel%20User%20Interfaces/Project%201/SpecialTopicsProj1.pdf" target="_blank">here</a>
 
 <ol>
  <a name="purpose"/> <h2><li> Purpose</h2>
