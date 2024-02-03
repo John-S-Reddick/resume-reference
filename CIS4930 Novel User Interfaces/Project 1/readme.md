@@ -33,9 +33,9 @@ This project was created by John S. Reddick. The outline of the following projec
              <ol>
                  <li> -[ ] Gain experience with simple recognizers using reliable data (touch/stylus/mouse).</li>
                  <li> -[ ] Gain experience with implementing a state-of-the-art algorithms from scratch by relying on algorithms provided in
-            the research paper</li>
+                    the research paper</li>
             </ol>
-</li>
+
  <a name="requirements"/> <h2><li> Requirements</h2>
      <ol>
     <a name="step-1"/><h3><li>Step 1 create some kind of basic canvas drawing application ^1</h3>
@@ -44,10 +44,12 @@ This project was created by John S. Reddick. The outline of the following projec
         <li>-[ ] Create a canvas on which to draw, and a canvas that displays what the recognizer sees</li>
         <li>-[ ] Track mouse movements</li>
         <li>-[ ] On the bottom display which template is most likely visually</li>
+        <li>-[ ] Save raw X, Y Coordinates and stroke count as data points in CSV files</li>
     </ol>
      <h4>Create buttons or widgets to do the following:</h4>
     <ol>
         <li>-[ ] Clear the canvas</li>
+        <li>-[ ] Tell the application when to save</li>
         <li>-[ ] Trigger recognition</li>
         <li>-[ ] Undo previous written strokes</li>
     </ol>
@@ -73,8 +75,7 @@ This project was created by John S. Reddick. The outline of the following projec
          <li>-[ ] Run separate experiments using the data you collected using a mouse vs a touch screen (if applicable)</li>
      </ol>
      </li>
-     </ol>         
-</li>
+     </ol>   
 <a name="footnotes"/><h2><li>Footnotes</h2>
     <ol>
         <li>            
@@ -88,7 +89,6 @@ This project was created by John S. Reddick. The outline of the following projec
             implementations, Dr. Pittman offered to reccomend additional examples as needed.
         </li>            
     </ol>
-</li> 
 <a name="recognizers"/> <h2><li> Recognizers</h2>        
             You should test these algorithms . I would also recommend adding 
             (Here I will provide citations to the pages)
@@ -97,15 +97,14 @@ This project was created by John S. Reddick. The outline of the following projec
             <a href="http://faculty.washington.edu/wobbrock/pubs/mobilehci-18.pdf">$Q</a>
             <b/>
             <a href="https://www.eecs.ucf.edu/isuelab/publications/pubs/gi2015_eugene.pdf">Penny Pincher</a>  
-</li>          
- 
+
 <a name="implementation"/><h2><li> Implementation</h2>
             To  your symbol recognizers, there are some things you need to consider.
             1. You need to find a way to invoke the recognizer. You can have it run in real time or in
             batch mode (by pressing a button or doing a different, heuristically determined gesture)            
             2. You will need to show recognition results to the user. A simple text box is fine but if you
             want to be more elaborate feel free to do so.
-</li>
+
 <a name="deliverables"/><h2><li> Deliverables</h2>
     <ol>
         <li>-[ ] Upload your source code to Canvas <a href="https://canvas.unf.edu/courses/100860/assignments/1328145.com]">here</a></li>
@@ -121,11 +120,11 @@ This project was created by John S. Reddick. The outline of the following projec
         <li>-[ ] Problems you encountered</li>
         <li>-[ ] Bonus: Room for Improvement</li>
     </ol>
-</li>
+
 <a name="grading-and-notes"/><h2><li> Grading and Notes</h2>
             80% correct implementation of the recognizers
             20% documentation
-</li>
+
 </ol>
 <a name="successes-and-resources"/>
 <h1>Successes and Resources</h1>
