@@ -53,11 +53,12 @@ This project was created by John S. Reddick. The outline of the following projec
             <li>-[X] Track mouse click</li>
             <li>-[X] Track mouse movements</li>
             <li>-[X] Paint mouse movements on drawing canvas</li>
-            <li>-[ ] Increase Stoke count on mouse click</li>
+            <li>-[X] Increase Stoke count on mouse click</li>
+            <li>-[X] Save raw X, Y Coordinates and stroke count to list as numpy array</li>
         </ol>
         <li> Create a canvas that displays what the recognizer sees</li>        
         <li>-[ ] On the bottom display which template is most likely visually</li>
-        <li>-[ ] Save raw X, Y Coordinates and stroke count as data points in CSV files</li>
+        
     </ol>
      <h4>Create buttons or widgets to do the following:</h4>
     <ol>
