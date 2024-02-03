@@ -163,7 +163,7 @@ This project was created by John S. Reddick. The outline of the following projec
     </li>
     <a name="tkinter"/><h2><li> Tkinter</h2>
         Tkinter was much more helpful than Qt, and easier to start. I am already familiar with Tkinter, so it was a breeze to get started.
-        The ability to size canvases and track mouse movements was very easy.
+        The ability to size canvases and track mouse movements was very easy. Documentation and references to resources will be included in relevent code
     </li>
 </ol>
 
