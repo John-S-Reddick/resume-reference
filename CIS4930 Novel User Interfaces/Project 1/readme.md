@@ -20,6 +20,7 @@
     * [Jet Brains](#jet-brains)
     * [Markdown Reference](#markdown)
     * [Tkinter](#tkinter)
+    * [Numpy](#numpy)
 3. [Problems Encountered](#problems-encountered)
     * [Qt](#qt)
 
@@ -165,11 +166,11 @@ This project was created by John S. Reddick. The outline of the following projec
         Tkinter was much more helpful than Qt, and easier to start. I am already familiar with Tkinter, so it was a breeze to get started.
         The ability to size canvases and track mouse movements was very easy. Documentation and references to resources will be included in relevent code
     </li>
-    <a name="NumPy"/><h2><li> Tkinter</h2>
+    <a name="numpy"/><h2><li> Numpy</h2>
         <a href="https://numpy.org/doc/stable/index.html#")>Numpy</a> 
-        > is the fundamental package for scientific computing in Python.
-        > It is a Python library that provides a multidimensional array object, various derived objects (such as masked arrays and matrices), and an assortment of routines for fast operations on
-        > arrays, including mathematical, logical, shape manipulation, sorting, selecting, I/O, discrete Fourier transforms, basic linear algebra, basic statistical operations, random simulation and much more.
+         is the fundamental package for scientific computing in Python.
+         It is a Python library that provides a multidimensional array object, various derived objects (such as masked arrays and matrices), and an assortment of routines for fast operations on
+         arrays, including mathematical, logical, shape manipulation, sorting, selecting, I/O, discrete Fourier transforms, basic linear algebra, basic statistical operations, random simulation and much more.
     </li>
 </ol>
 
