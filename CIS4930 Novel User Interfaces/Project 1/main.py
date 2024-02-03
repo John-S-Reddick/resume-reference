@@ -1,4 +1,5 @@
 from tkinter import *
+import numpy as np
 
 # Windows for Tkinter
 # https://likegeeks.com/python-gui-examples-tkinter-tutorial/
@@ -20,6 +21,15 @@ from tkinter import *
 # PyInstaller
 # https://pyinstaller.org/en/stable/
 
+
+
+
+
+
+# Print Options
+# https://numpy.org/doc/stable/reference/generated/numpy.set_printoptions.html
+np.set_printoptions()
+
 WINDOW_SCALER = .5
 CANVAS_SCALER = 1
 GAP_SCALER = 1 - CANVAS_SCALER / 4
@@ -33,8 +43,14 @@ HEIGHT = 1080
 width = WIDTH * WINDOW_SCALER
 height = HEIGHT * WINDOW_SCALER
 
+# Create array of Zeros NumPy
+# https://numpy.org/doc/stable/reference/generated/numpy.zeros.html#numpy.zeros
+arr = np.zeros((1, 3),  dtype=int)
+
 currentX = 0
 currentY = 0
+currentStroke = -1
+
 file1 = open(FILE_NAME, "w")
 
 canvasSize = width * CANVAS_SCALER
@@ -50,9 +66,17 @@ import tkinter as tk
 #Refer to mouse events for more information
 
 
+#Increases current stroke count
+def mouse_click(event):
+    global currentStroke
+    currentStroke = currentStroke + 1
+    print(arr)
 
 def drag_handler(event):
-    print(event.x, event.y)
+    global currentStroke
+    #np.append(arr, np([event.x, event.y, currentStroke]), axis=0)
+    print([event.x, event.y, currentStroke])
+
 
 
 root = tk.Tk()
@@ -64,9 +88,8 @@ canvas1 = tk.Canvas(root, width=canvasSize, height=canvasSize, bg='white')
 canvas1.grid(column=0,row=0)
 
 # https://dafarry.github.io/tkinterbook/tkinter-events-and-bindings.htm
-canvas1.bind("<Button-1>", lambda x: print("LEFT CLICK"))
+canvas1.bind("<Button-1>", mouse_click)
 canvas1.bind("<B1-Motion>", drag_handler)
-canvas1.bind("<ButtonRelease-1>", print("waxum"))
 
 canvas2 = tk.Canvas(root, width=canvasSize, height=canvasSize, bg='white')
 canvas2.grid(column=1,row=0)
