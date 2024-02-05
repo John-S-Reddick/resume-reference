@@ -56,7 +56,7 @@ This project was created by John S. Reddick. The outline of the following projec
             <li>-[X] Increase Stoke count on mouse click</li>
             <li>-[X] Save raw X, Y Coordinates and stroke count to list as numpy array</li>
         </ol>
-        <li> Create a canvas that displays what the recognizer sees</li>        
+        <li>-[ ] Create a canvas that displays what the recognizer sees</li>        
         <li>-[ ] On the bottom display which template is most likely visually</li>
     </ol>
      <h4>Create buttons or widgets to do the following:</h4>
