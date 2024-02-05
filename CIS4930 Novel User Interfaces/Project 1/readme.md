@@ -62,8 +62,8 @@ This project was created by John S. Reddick. The outline of the following projec
      <h4>Create buttons or widgets to do the following:</h4>
     <ol>
         <li>-[ ] Create a submit button and function to write coordinates to file</li>
-        <li>-[ ] Undo previous written strokes</li>
-        <li>-[ ] Clear the canvas</li>
+        <li>-[X] Undo previous written strokes</li>
+        <li>-[X] Clear the canvas</li>
         <li>-[ ] Trigger recognition</li>
     </ol>
     </li>
