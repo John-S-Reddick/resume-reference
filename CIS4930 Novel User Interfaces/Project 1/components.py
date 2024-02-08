@@ -25,16 +25,17 @@ CANV_HEIGHT = HEIGHT * WINDOW_SCALER
 CANV_SIDE = CANV_WIDTH
 
 # Symbols as required by Dr. Pittman
-SYMBOLS = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '+', '-', '*', 't', 'a', 'n', 's', 'c', 'i']
-SAVEZ = 'templates'
-TEMPLATES = 'templates.npz'
+SYMBOLS = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '+', '-', '.', 't', 'a', 'n', 's', 'c', 'i']
+DIRECTORY = 'templates/'
 SAMPLES = 5
 
 
 class DrawingArea:
-    def __init__(self, master, nphandler):
+    def __init__(self, wind, master, nphandler=None):
+        self.wind = wind
         self.master = master
-        self.np_handler = nphandler
+        if nphandler:
+            self.np_handler = nphandler
         self.points = np.array([[-1, -1, -1]])
         self.undo_stack = []
         self.redo_stack = []
@@ -112,12 +113,12 @@ class DrawingArea:
 
     def submit(self, *event):
         # trigger training
-        if self.np_handler.training:
+        if self.np_handler:
             self.np_handler.increment(self.points)
             self.erase_sketch()
         # Trigger recognition
         else:
-            pass
+            self.wind.new_window()
             
         """ User Interaction """
     ##
@@ -136,6 +137,8 @@ class DrawingArea:
         # https://www.tutorialexample.com/python-tkinter-bind-ctrlkey-python-tutorial/
         # https://dafarry.github.io/tkinterbook/tkinter-events-and-bindings.htm
         self.canvas.bind("<Button-1>", self.mouse_click)
+        self.canvas.bind("<Button-2>", self.undo)
+        self.canvas.bind("<Button-3>", self.submit)
         self.canvas.bind("<B1-Motion>", self.drag_handler)
         self.canvas.bind_all("<Control-Key-z>", self.undo)
         self.canvas.bind_all("<Control-Key-y>", self.redo)
@@ -146,8 +149,6 @@ class DrawingArea:
 
         # subButton = Button(root, text="Submit", command=save)
         # subButton.grid(column=0, row=1)
-
-
 class DrawingButtons:
     def __init__(self, master, canvas):
 
@@ -155,50 +156,35 @@ class DrawingButtons:
             subtext = 'Recognize Sketch'
         else:
             subtext = 'Save template'
-
-        prompt = Label(master, text=canvas.np_handler.current_symbol())
         undo_button = Button(master, text="Undo", command=canvas.undo)
         redo_button = Button(master, text="Redo", command=canvas.redo)
         erase_button = Button(master, text="Clear Canvas", command=canvas.erase_sketch)
         submit_button = Button(master, text=subtext, command=canvas.submit)
 
-        prompt.pack()
         undo_button.pack()
         redo_button.pack()
         erase_button.pack()
         submit_button.pack()
-
-
-# Proceed through 5 drawings of symbols, displaying and submitting each
-# Once complete, close training window and open testing window
-
 class Training:
     def __init__(self, master):
         self.master = master
         self.frame = tk.Frame(self.master)
-        self.canvas = DrawingArea(master=self.frame, nphandler=TrainingHandler())
+        self.canvas = DrawingArea(wind=self, master=self.frame, nphandler=TrainingHandler())
         self.frame.pack()
-
-        def new_window():
-            self.newWindow = tk.Toplevel(self.master)
-            self.app = evaluation(self.newWindow)
-
-
+    def new_window(self):
+        self.newWindow = tk.Toplevel(self.master)
+        self.app = evaluation(self.newWindow)
+        self.master.destroy()
 class TrainingHandler:
     def __init__(self, symbols=SYMBOLS, samples=SAMPLES):
-        if not exists(TEMPLATES):
-            self.key = np.zeros(len(symbols) + 1)
-            np.savez(SAVEZ, key=self.key)
-        self.templates = np.load(TEMPLATES)
         self.training = True
-        self.key = self.templates['key']
-        self.generation = int(self.key[0])
         self.symbols = symbols
         self.samples = samples
         self.inc = 0
+        self.itr = 0
         self.entry_names = []
         for s in symbols:
-            self.entry_names.append('tmplt' + str(self.generation) + s)
+            self.entry_names.append(DIRECTORY + 'tmplt.' + s + '.')
     # Keywords numpy savez
     # https://stackoverflow.com/questions/33878179/use-value-of-variable-rather-than-keyword-in-python-numpy-savez
     def ind(self):
@@ -207,20 +193,15 @@ class TrainingHandler:
         return self.symbols[self.ind()]
     def increment(self, points):
         index = self.ind()
-        current_entry = self.entry_names[index]
-        np.savez(SAVEZ, **{current_entry: points})
-        print ("Saved to: " + current_entry)
-        self.inc += 1
-        if self.inc >= len(self.symbols) * self.samples:
-            self.key[FIRST] = self.generation + 1
-            np.savez(SAVEZ, key=self.key)
+        if index < len(self.symbols):
+            current_entry = self.entry_names[index]
+            path = current_entry + str(int(self.inc) % int(self.samples)) +".npy"
+            with open(path, 'wb') as f:
+                np.save(f, points)
+            print ("Saved to: " + path)
+            self.inc += 1
+        else:
             self.training = False
-
-
-
-
-
-
 
 class evaluation:
     def __init__(self, master):
@@ -232,3 +213,4 @@ class evaluation:
 
     def close_windows(self):
         self.master.destroy()
+
