@@ -14,7 +14,7 @@ np.set_printoptions()
 
 def main():
     root = tk.Tk()
-    app = comps.Training(root)
+    app = comps.Welcome(root)
     root.mainloop()
 
 if __name__ == '__main__':

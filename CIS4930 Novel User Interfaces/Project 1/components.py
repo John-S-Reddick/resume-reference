@@ -47,8 +47,9 @@ class DrawingArea:
         self.canvas.pack
         self.buttons = DrawingButtons(master=self.master, canvas=self)
         self.draw_prompt()
-    ###
+        ###
         """ Drawing """
+
     ###
     def draw_prompt(self):
         s = str(self.np_handler.current_symbol())
@@ -56,6 +57,7 @@ class DrawingArea:
             (300, 100),
             text="Please draw: " + s,
             font='tkDefaeultFont 24')
+
     def painting(self, x2, y2):
         if self.x1 == -1 or self.y1 == -1:
             self.x1 = x2
@@ -63,6 +65,7 @@ class DrawingArea:
         self.canvas.create_line(self.x1, self.y1, x2, y2)
         self.x1 = x2
         self.y1 = y2
+
     def load_sketch(self, sketch):
         self.clear_canvas()
         line1 = -1
@@ -73,10 +76,12 @@ class DrawingArea:
                 self.y1 = -1
             self.painting(line2[X], line2[Y])
             line1 = line2[STROKE]
+
     def drag_handler(self, event):
         self.painting(event.x, event.y)
         newpoint = np.array([[event.x, event.y, self.stroke_count]])
         self.points = np.concatenate((self.points, newpoint), axis=0)
+
     def erase_sketch(self, *event):
         self.points = np.array([[-1, -1, -1]])
         self.undo_stack.append(self.points)
@@ -119,8 +124,9 @@ class DrawingArea:
         # Trigger recognition
         else:
             self.wind.new_window()
-            
+
         """ User Interaction """
+
     ##
     def mouse_up(self, event):
         self.redo_stack.append(self.points)
@@ -149,6 +155,35 @@ class DrawingArea:
 
         # subButton = Button(root, text="Submit", command=save)
         # subButton.grid(column=0, row=1)
+
+## TODO THIS THING! DRAWS THE POINTS> DOES MATH> ALMOST DONE!
+## ALMOST DONE!
+class TemplateGuy:
+
+    def __init__(self, wind, master, nphandler=None):
+        self.wind = wind
+        self.master = master
+        if nphandler:
+
+        self.canvas = tk.Canvas(master, width=CANV_SIDE, height=CANV_SIDE, bg='white')
+        self.draw_prompt()
+
+    ###
+    def draw_prompt(self):
+        s = str(self.np_handler.current_symbol())
+        self.canvas.create_text(
+            (300, 100),
+            text="Please draw: " + s,
+            font='tkDefaeultFont 24')
+
+    def painting(self, x2, y2):
+        if self.x1 == -1 or self.y1 == -1:
+            self.x1 = x2
+            self.y1 = y2
+        self.canvas.create_line(self.x1, self.y1, x2, y2)
+        self.x1 = x2
+        self.y1 = y2
+
 class DrawingButtons:
     def __init__(self, master, canvas):
 
@@ -165,16 +200,63 @@ class DrawingButtons:
         redo_button.pack()
         erase_button.pack()
         submit_button.pack()
-class Training:
+
+
+class Welcome:
     def __init__(self, master):
+        master.geometry('300x200')
+        master.resizable(False, False)
+        self.app = None
+        self.newWindow = None
         self.master = master
         self.frame = tk.Frame(self.master)
-        self.canvas = DrawingArea(wind=self, master=self.frame, nphandler=TrainingHandler())
+        pre_trained = tk.Button(
+            master,
+            text='Enter Pre-trained drawing area',
+            command=self.pre_trained
+        )
+        self.frame = tk.Frame(self.master)
+        trained_button = tk.Button(
+            master,
+            text='Enter Training',
+            command=self.to_train
+        )
+        pre_trained.pack()
+        trained_button.pack()
         self.frame.pack()
+
+    def pre_trained(self):
+        self.newWindow = tk.Toplevel(self.master)
+
+        self.app = Evaluation(self)
+
+
+    def to_train(self):
+        self.newWindow = tk.Toplevel(self.master)
+
+        self.app = Training(self.newWindow)
+
+
+class Training:
+    def __init__(self, master):
+        self.app = None
+        self.newWindow = None
+        self.master = master
+
+        self.frame = tk.Frame(self.master)
+
+        self.canvas = DrawingArea(
+            wind=self,
+            master=self.frame,
+            nphandler=TrainingHandler()
+        )
+        self.frame.pack()
+
     def new_window(self):
         self.newWindow = tk.Toplevel(self.master)
-        self.app = evaluation(self.newWindow)
-        self.master.destroy()
+        self.app = Evaluation(self.newWindow)
+
+
 class TrainingHandler:
     def __init__(self, symbols=SYMBOLS, samples=SAMPLES):
         self.training = True
@@ -185,32 +267,35 @@ class TrainingHandler:
         self.entry_names = []
         for s in symbols:
             self.entry_names.append(DIRECTORY + 'tmplt.' + s + '.')
+
     # Keywords numpy savez
     # https://stackoverflow.com/questions/33878179/use-value-of-variable-rather-than-keyword-in-python-numpy-savez
     def ind(self):
         return int(self.inc / self.samples)
+
     def current_symbol(self):
         return self.symbols[self.ind()]
+
     def increment(self, points):
         index = self.ind()
         if index < len(self.symbols):
             current_entry = self.entry_names[index]
-            path = current_entry + str(int(self.inc) % int(self.samples)) +".npy"
+            path = current_entry + str(int(self.inc) % int(self.samples)) + ".npy"
             with open(path, 'wb') as f:
                 np.save(f, points)
-            print ("Saved to: " + path)
+            print("Saved to: " + path)
             self.inc += 1
         else:
             self.training = False
 
-class evaluation:
+
+class Evaluation:
     def __init__(self, master):
         self.master = master
         self.frame = tk.Frame(self.master)
-        self.quitButton = tk.Button(self.frame, text='Quit', width=25, command=self.close_windows)
-        self.quitButton.pack()
+        self.canvas = DrawingArea()
+        self.display = TemplateGuy()
         self.frame.pack()
 
     def close_windows(self):
         self.master.destroy()
-
