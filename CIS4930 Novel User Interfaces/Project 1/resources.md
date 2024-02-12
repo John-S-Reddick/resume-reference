@@ -5,12 +5,17 @@
 ### Markdown
 - https://www.markdownguide.org/cheat-sheet/
 ### Numpy:
+
 - Array Creation:
     - Zeros: https://numpy.org/doc/stable/reference/generated/numpy.zeros.html#numpy.zeros
+- Array Conversion
+  - https://stackoverflow.com/questions/46947798/how-to-convert-numpy-int-to-float-with-separate-numpy-array
 - Concatenation
     - https://numpy.org/doc/stable/reference/generated/numpy.concatenate.html
 - Printing:
     - https://numpy.org/doc/stable/reference/generated/numpy.set_printoptions.html
+- Insertion
+  - https://www.slingacademy.com/article/numpy-how-to-insert-row-column-2d-array/
 - File Handling
     - NPY Format
     https://numpy.org/doc/stable/reference/generated/numpy.lib.format.html#module-numpy.lib.format
