@@ -56,27 +56,27 @@ This project was created by John S. Reddick. The outline of the following projec
             <li>-[X] Increase Stoke count on mouse click</li>
             <li>-[X] Save raw X, Y Coordinates and stroke count to list as numpy array</li>
         </ol>
-        <li>-[ ] Create a canvas that displays what the recognizer sees</li>        
-        <li>-[ ] On the bottom display which template is most likely visually</li>
+        <li>-[X] Create a canvas that displays what the recognizer sees</li>        
+        <li>-[X] On the bottom display which template is most likely visually</li>
     </ol>
      <h4>Create buttons or widgets to do the following:</h4>
     <ol>
-        <li>-[ ] Create a submit button and function to write coordinates to file</li>
+        <li>-[X] Create a submit button and function to write coordinates to file</li>
         <li>-[X] Undo previous written strokes</li>
         <li>-[X] Clear the canvas</li>
-        <li>-[ ] Trigger recognition</li>
+        <li>-[X] Trigger recognition</li>
     </ol>
     </li>
     <a name="step-2"/><h3><li>Step 2 Implement Dollar Family Recognizers</h3>    
     <ol>
-        <li>-[ ] $1</li>
+        <li>-[X] $1</li>
         <li>-[ ] $Q</li>
         <li>-[ ] Penny Pincher</li>
     </ol>
     </li>
     <a name="step-3"/><h3><li>Step 3 Training</h3> Test each recognizer by writing each symbol 5 times, which should give you a good accuracy number
     <ol>
-        <li>-[ ] Train each recognizer with with the following symbols: 0,1,2,3,4,5,6,7,8,9,+,-,*,t,a,n,s,c,i</li>
+        <li>-[X] Train each recognizer with with the following symbols: 0,1,2,3,4,5,6,7,8,9,+,-,*,t,a,n,s,c,i</li>
         <li>-[ ] Include the square root symbol and some more oddball symbols of your own choosing</li>
         <li>-[ ] Train each recognizer with 1, 3, and 5 samples per symbol</li>
     </ol>
