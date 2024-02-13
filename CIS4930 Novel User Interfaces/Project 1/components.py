@@ -31,7 +31,7 @@ NAME = m.NAME
 EXTENSION = m.EXTENSION
 SAMPLES = m.SAMPLES
 
-RESAMPLE_N = m.RESAMPLE_N
+RESAMPLE_N = m.D1N
 
 
 class DrawingArea2:
@@ -76,9 +76,9 @@ class DrawingArea2:
                     p[X], p[Y]
                 )
 
-    def draw_text(self):
+    def draw_text(self, x=200, y=200):
         self.canvas.create_text(
-            (200, 200),
+            (x, y),
             text=self.director.text,
             font=self.s['font']
         )

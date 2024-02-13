@@ -33,7 +33,7 @@ NAME = m.NAME
 EXTENSION = m.EXTENSION
 SAMPLES = m.SAMPLES
 
-RESAMPLE_N = m.RESAMPLE_N
+RESAMPLE_N = m.D1N
 
 BBOX_SIZE = m.BBOX_SIZE
 
@@ -53,34 +53,45 @@ class Director:
         self.data = Data2()
         self.templater = TemplateManger(self)
         self.canvas = c.DrawingArea2(self)
-        self.display = c.DrawingArea2(self)
-        self.display.canvas.pack()
+        self.display = None
         self.canvas.canvas.pack()
 
         self.canvas.load_sketch(False)
 
     def enter_training(self):
         self.binds = c.Binds(director=self, element=self.canvas, mode="Training")
-        self.training_text(self.templater.get_status())
+        self.training_text(self.templater.get_status(), self.canvas)
 
     def enter_recogntion(self):
+        self.display = c.DrawingArea2(self)
+        self.templater.initialize()
+
         self.binds = c.Binds(director=self, element=self.canvas, mode="Evaluation")
+        self.text = '\n\nCtrl-Z : Undo' + \
+                    '\nCtrl-Y : Redo' + \
+                    '\nCtrl-X : Clear' + \
+                    '\nRight Click: Submit'
+        self.update_text2(self.canvas, x=200, y=400)
 
     def recognize(self, *event):
-        t = self.templater
-        one_d = t.recog_one_dollar()
-        status = t.status(one_d[0])
-        self.recognition_text(status)
+        res = self.templater.run_recognition(self.data.points)
+        oned = self.templater.status(res['oned_t'])
+        pp = self.templater.status(res['oned_t'])
 
+        str1 = "One Dollar: " + oned['symbol'] + \
+               "\nScore: " + str(int(res['oned_s']))
+        str2 = "\n\nPenny pincher: " + pp['symbol'] + \
+               "\nScore: " + str(res['pp_s'])
 
-    def recognition_text(self, status):
-        status = status
-        self.text = \
-            "One Dollar: " + status["symbol"] + '\nAcc:'\
-            "--- " + status["symbol"] + '\n'
-        self.update_text(self.display)
+        self.text = str1 + str2 + '\n' + \
+                    '\n\nCtrl-Z : Undo' + \
+                    '\nCtrl-Y : Redo' + \
+                    '\nCtrl-X : Clear' + \
+                    '\nRight Click: Submit'
 
-    def training_text(self, status):
+        self.update_text2(self.canvas, 200, 300)
+
+    def training_text(self, status, element):
         status = status
         self.text = \
             "Current Symbol: " + status["symbol"] + '\n' + \
@@ -89,12 +100,16 @@ class Director:
             '\nTotal progress: ' + str(status['index']) + '/' + str(status['total']) + \
             "\n\nCurrent Symbol: " + status["symbol"] + \
             '\nNext Symbol: ' + str(status['next_symbol']) + \
-            '\nPrevious Symbol ' + str(status['prv_symbol'])
-        self.update_text(self.display)
+            '\nPrevious Symbol ' + str(status['prv_symbol']) + \
+            '\n\nCtrl-Z : Undo' + \
+            '\nCtrl-Y : Redo' + \
+            '\nCtrl-X : Clear' + \
+            '\nRight Click: Submit'
+        self.update_text(self.canvas)
 
     def write_template(self, *events):
-        status = self.templater.train(self.data.points)
-        self.training_text(status)
+        status = self.templater.train()
+        self.training_text(status, self.canvas)
         self.data.initialize_points()
         # Clear
         return status['done']
@@ -102,6 +117,10 @@ class Director:
     def update_text(self, element):
         element.clear_canvas()
         element.draw_text()
+
+    def update_text2(self, element, x, y):
+        element.clear_canvas()
+        element.draw_text(x=x, y=y)
 
     def redo(self, *event):
         self.data.redo()
@@ -146,7 +165,10 @@ class TemplateManger:
 
         self.training = 0
 
-        self.one_dollar = r.OneDollar(self.templates)
+        self.recoger = None
+
+    def initialize(self):
+        self.recoger = r.RecognitionManager(self.templates)
 
     def create_template(self, path):
         np.save(path, self.data.points)
@@ -182,12 +204,13 @@ class TemplateManger:
 
     def train(self):
         status = self.get_status()
+        print(status)
         self.create_template(status['save'])
         self.training += 1
         return status
 
-    def recog_one_dollar(self):
-        return self.one_dollar.sketch(self.data.points)
+    def run_recognition(self, points):
+        return self.recoger.recognize(points)
 
 
 class Data2:

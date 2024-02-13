@@ -1,6 +1,4 @@
 import math
-
-import numpy
 import numpy as np
 import main as m
 
@@ -20,9 +18,15 @@ FIRST = 0
 SECOND = 1
 DIMENSIONS = 3
 
-RESAMPLE_N = m.RESAMPLE_N
+D1N = m.D1N
+PPN = m.PPN
+QN = m.QN
 
 BBOX_SIZE = m.BBOX_SIZE
+
+
+def range_maker(x, points):
+    return range(x, arr_size(points))
 
 
 def arr_size(points):
@@ -37,8 +41,12 @@ def sanitize(points):
 
 
 # Outputs the euclidean distance between two entries in a numpy array
+def sqr_distance(p2, p1):
+    return (p2[X] - p1[X]) ** 2 + (p2[Y] - p2[Y]) ** 2
+
+
 def distance(p2, p1):
-    return math.sqrt((p2[X] - p1[X]) ** 2 + (p2[Y] - p2[Y]) ** 2)
+    return math.sqrt(sqr_distance(p2, p1))
 
 
 def centroid(points):
@@ -59,7 +67,6 @@ def centroid(points):
     return c
 
 
-# TODO Implement bounding_box
 def bounding_box(points):
     x_coords = points[:, 0]  # Extract x coordinates
     y_coords = points[:, 1]  # Extract y coordinates
@@ -76,16 +83,43 @@ def bounding_box(points):
     return [width, height]
 
 
-class RecognitionManager():
-    def __init__(self):
+def path_length(points):
+    d = 0
+    for i in range_maker(1, points):
+        d += distance(points[i - 1], points[i])
+    return d
+
+
+def calc_i(points, n):
+    return path_length(points) / (n - 1)
+
+
+class RecognitionManager:
+    def __init__(self, templates):
+        self.templates = templates
+        self.one_dollar = OneDollar(templates)
+        self.penny_pincher = PennyPincher(templates)
         pass
 
+    def recognize(self, points):
+        oned = self.one_dollar.recognize(points)
+        pp = self.penny_pincher.recognize(points)
+        return ({
+            'oned_t': oned[0],
+            'oned_s': oned[1],
+            'pp_t': pp[0],
+            'pp_s': pp[1]
+        }
 
-class OneDollar():
+
+                )
+
+
+class OneDollar:
     def __init__(self, templates):
         self.templates = []
         for t in templates:
-            t = self.resample(t, RESAMPLE_N)
+            t = self.resample(t, D1N)
             t = self.rotate_to_zero(t)
             t = self.scale_to_square(t)
             t = self.translate_to_origin(t)
@@ -97,7 +131,7 @@ class OneDollar():
             temp.append(self.resample(t, n))
         return temp
 
-    def resample(self, points, n):
+    def resample(self, points, n=D1N):
         points = sanitize(points)
         I = self.path_length(points) / (n - 1)
         D = 0
@@ -118,11 +152,10 @@ class OneDollar():
 
                 new_points[x] = q
                 x += 1
-                points[i-1] = np.array([q])
+                points[i - 1] = np.array([q])
                 D = 0
             else:
                 D = D + d
-        print(arr_size(new_points))
         return new_points
 
     def path_length(self, points):
@@ -171,21 +204,23 @@ class OneDollar():
         return sanitize(new_points)
 
     def sketch(self, points):
-        points = self.resample(points, RESAMPLE_N)
+        points = self.resample(points, D1N)
         points = self.rotate_to_zero(points)
         points = self.scale_to_square(points)
         points = self.translate_to_origin(points)
         return self.recognize(points)
 
     def recognize(self, points):
+        points = self.resample(points)
         b = float('inf')
+        t1 = 0
         for t in range(len(self.templates)):
             d = self.distance_at_best_angle(points, self.templates[t], -PI_BY_4, PI_BY_4, PI_BY_90)
             if d < b:
                 b = d
                 t1 = t
         score = (1 - b) / (0.5 * math.sqrt(2 * (SIZE ** 2)))
-        print([t1, score])
+        print(t1)
         return [t1, score]
 
     def distance_at_best_angle(self, points, t, θa, θb, θd):
@@ -215,18 +250,124 @@ class OneDollar():
         new_points = self.rotate_by(points, θ)
         return self.path_distance(new_points, t)
 
-    # TODO Work on path distance
     def path_distance(self, a, b):
         d = 0
-        for i in range(RESAMPLE_N):
+        for i in range(D1N):
             d += distance(a[i], b[i])
         #
-        return d / RESAMPLE_N
+        return d / D1N
 
 
-class PennyPincher():
-    def __init__(self):
+class PennyPincher:
+    def __init__(self, templates):
+        self.templates = []
+        for t in templates:
+            self.templates.append(self.resample(points=t, n=PPN))
+
+    def resample(self, points, n=PPN, template=True):
+        points = sanitize(points)
+        I = calc_i(points, n)
+        D = 0
+
+        new_points = np.zeros((n, 3))
+        new_points[0] = points[FIRST]
+
+        prev = points[FIRST]
+        q = np.array([X, Y, STROKE])
+        r = q
+
+        for i in range_maker(1, points):
+            pi = points[i]
+            p1 = points[i - 1]
+            d = distance(points[i], points[i - 1])
+            if D + d >= I:
+                eq = (I - D) / d
+                q[X] = p1[X] + (pi[X] - p1[X]) * eq
+                q[Y] = p1[Y] + (pi[Y] - p1[Y]) * eq
+
+                r[X] = q[X] - prev[X]
+                r[Y] = q[Y] - prev[Y]
+
+                if template:
+                    tdist = distance(np.array([0, 0, 0]), r)
+                    if tdist != 0:
+                        r[X] = float(r[X]) / tdist
+                        r[Y] = float(r[Y]) / tdist
+
+                D = 0
+                prev = q
+
+                np.concatenate((new_points, np.array([r])), axis=0)
+                points[i] = q
+
+            else:
+                D = D + d
+
+        return new_points
+
+    def recognize(self, points):
+        c = self.resample(points=points, n=PPN, template=False)
+        n = arr_size(c)
+        similarity = float('-inf')
+        T = 0
+        for t in range(len(self.templates)):
+            template = self.templates[t]
+            d = 0
+            for i in range(n - 2):
+                d = d + template[i][X] * c[i][X] + template[i][Y] * c[i][Y]
+
+            if d > similarity:
+                similarity = d
+                T = t
+
+        return T, similarity
+
+
+class QDollar:
+    def __init__(self, templates):
+        self.templates = []
+        for t in templates:
+            self.templates.append(t)
         pass
 
-    def resample(self):
-        pass
+    def resample(self, points):
+        n = self.n
+        I = calc_i(points, n)
+
+        points = sanitize(points)
+        I = self.path_length(points) / (n - 1)
+        D = 0
+
+        new_points = np.zeros((n, 3))
+        new_points[0] = points[FIRST]
+
+        q = points[FIRST]
+        x = 0
+        for i in range(1, arr_size(points)):
+            pi = points[i]
+            p1 = points[i - 1]
+            d = distance(p1, pi)
+            if D + d >= I:
+                eq = (I - D) / d
+                q[X] = p1[X] + eq * (pi[X] - p1[X])
+                q[Y] = p1[Y] + eq * (pi[Y] - p1[Y])
+
+                new_points[x] = q
+                x += 1
+                points[i - 1] = np.array([q])
+                D = 0
+            else:
+                D = D + d
+        return new_points
+
+    def recognize(self, points):
+        points = sanitize(points)
+        points = self.normalize(points, self.n, self.m)
+        score = float('inf')
+        for t in range(len(self.templates)):
+            d = self.cloud_match(points, self.templates[t], self.n, score)
+            if d < score:
+                score = d
+                T = t
+
+        return T, score
