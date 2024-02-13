@@ -34,12 +34,12 @@
 
 # <a id="installation"/>
 <h3>After installing and extracting the .ZIP from GitHub do the following:</h3>
-1. <h4> Install <a href="https://www.python.org/downloads/">Python</a> if you haven't!</h4>
-2. <h4>python -m pip install --upgrade pip<br></h4>
-3. <h4>pip install numpy<br></h4>
-4. <h4>pip install tkinter<br></h4>
-5. <h4>python main.py</h4>
-6. Select the 'Pre-Trained' option
+<h4> Install <a href="https://www.python.org/downloads/">Python</a> if you haven't!</h4>
+<h4>python -m pip install --upgrade pip<br></h4>
+<h4>pip install numpy<br></h4>
+<h4>pip install tkinter<br></h4>
+<h4>python main.py</h4>
+Select the 'Pre-Trained' option
 
 <h1>Project 1 – Exploring $-family recognizers</h1>
 <h5><a href="https://canvas.unf.edu/courses/100860/assignments/1328145.com]">Submission</a> Due: 2/8/24 11:59 pm<h5/> 
