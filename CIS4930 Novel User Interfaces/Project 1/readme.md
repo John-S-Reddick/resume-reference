@@ -34,13 +34,12 @@
 
 # <a id="installation"/>
 <h3>After installing and extracting the .ZIP from GitHub do the following:</h3>
-(The ones with arrows can be executed by clicking on them)
-1. <h4> Install <a href="https://www.python.org/downloads/">Python</a> if you haven't! </h4>
-2. <h4>```python -m pip install --upgrade pip``` <br></h4>
-3. <h4>```pip install numpy```<br></h4>
-4. <h4>```pip install tkinter``` <br></h4>
-5. <h4>```python main.py```</h4>
-6. Select the 'Pre-Trained' option
+<h4> Install <a href="https://www.python.org/downloads/">Python</a> if you haven't!</h4>
+<h4>python -m pip install --upgrade pip<br></h4>
+<h4>pip install numpy<br></h4>
+<h4>pip install tkinter<br></h4>
+<h4>python main.py</h4>
+Select the 'Pre-Trained' option
 
 <h1>Project 1 – Exploring $-family recognizers</h1>
 <h5><a href="https://canvas.unf.edu/courses/100860/assignments/1328145.com]">Submission</a> Due: 2/8/24 11:59 pm<h5/> 
@@ -72,8 +71,7 @@ This project was created by John S. Reddick. The outline of the following projec
             <li>-[X] Increase Stoke count on mouse click</li>
             <li>-[X] Save raw X, Y Coordinates and stroke count to list as numpy array</li>
         </ol>
-        <li> Create a canvas that displays what the recognizer sees</li>        
-
+        <li> Create a canvas that displays what the recognizer sees</li>
         <li>-[X] On the bottom display which template is most likely visually</li>
     </ol>
      <h4>Create buttons or widgets to do the following:</h4>
