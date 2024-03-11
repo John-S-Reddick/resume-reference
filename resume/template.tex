@@ -1,0 +1,116 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Modern LaTeX Resume
+% Version: 1.0 (2024-03-11)
+%
+% This template has been downloaded from:
+% https://www.LaTeXTemplates.com
+%
+% Original author:
+% ChatGPT with modifications for a modern and attractive look
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,11pt]{moderncv} 
+
+% ModernCV themes
+\moderncvstyle{banking} % Style options: 'casual' (default), 'classic', 'oldstyle', 'banking'
+\moderncvcolor{purple} % Color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey', 'black'
+
+% Character encoding
+\usepackage[utf8]{inputenc} 
+
+% Adjust the page margins
+\usepackage[scale=0.85]{geometry}
+\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+% Personal data
+\name{John}{Reddick}
+\address{1006 Bobbin Lane}{Belmont, North Carolina 28012}{}
+\phone[mobile]{(813) 253-9426}
+\email{john.work.reddick@outlook.com}
+\social[linkedin]{johnreddick}
+\social[github]{johnreddick}
+
+\renewcommand{\labelitemi}{$\bullet$}
+%----------------------------------------------------------------------------------------
+%	CONTENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+
+%----------------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\cventry{Jan 2019--May 2024}{B.S. in Computer Science \& Engineering}{University of North Florida}{}{}{
+Focus: Machine Learning, Algorithms, and Data Science.
+}
+
+\cventry{Jul 2018--Jun 2019}{Associate of Arts: Computer Science}{Hillsborough Community College}{}{}{
+}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\section{Work Experience}
+
+\cventry{May 2020--Aug 2023}{Machine Learning Research Assistant}{University of North Florida}{Jacksonville, FL}{}{
+\begin{itemize}
+\item Used MATLAB and Python to process CSV files for machine learning applications.
+\item Implemented machine learning frameworks: Gaussian process, Linear classifiers, and Reinforcement Learning, enhancing model accuracy and efficiency.
+\end{itemize}
+}
+
+\cventry{May 2020--Aug 2023}{Student Tutor}{University of North Florida}{Jacksonville, FL}{}{
+\begin{itemize}
+\item Provided academic support to students, enhancing their understanding of complex concepts in computer science.
+\end{itemize}
+}
+
+\cventry{May 2020--Aug 2020}{Full Stack Development Intern}{Picture Yourself Stories LLC}{Jacksonville, FL}{}{
+\begin{itemize}
+\item Developed web applications using JavaScript, React, Bootstrap, and Node.js, contributing to project milestones and improving user experience.
+\item Managed a MySQL database for efficient data storage and retrieval.
+\end{itemize}
+}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+\section{Projects}
+
+\cventry{Mar 2024--April 2024}{Sign Language Dictionary}{}{}{}{
+\begin{itemize}
+\item Utilized TensorFlow, OpenCV, and MediaPipe for gesture recognition, improving accessibility for the deaf and hard of hearing community.
+\end{itemize}
+}
+
+\cventry{Mar 2024--April 2024}{ARCOS Database Research Paper}{}{}{}{
+\begin{itemize}
+\item Analyzed over 250GB of medical records to study opioid overdoses, utilizing MySQL, Go, and Python for data processing.
+\end{itemize}
+}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+\section{Technical Strengths}
+
+\cvitem{Programming Languages}{C, C++, Java, Python}
+\cvitem{Web Development}{JavaScript, React, Node.js, HTML, CSS}
+\cvitem{Tools}{GitHub, Linux, MATLAB}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
