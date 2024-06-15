@@ -1,8 +1,8 @@
-PWD c:/Users/John/Downloads/LaTeXTemplates_medium-length-professional-cv_v3.0
+PWD c:/Users/John/CLionProjects/resume-reference/resume
 INPUT c:/texlive/2023/texmf.cnf
 INPUT c:/texlive/2023/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/John/Downloads/LaTeXTemplates_medium-length-professional-cv_v3.0/template.tex
+INPUT c:/Users/John/CLionProjects/resume-reference/resume/template.tex
 OUTPUT template.log
 INPUT c:/texlive/2023/texmf-dist/tex/latex/moderncv/moderncv.cls
 INPUT c:/texlive/2023/texmf-dist/tex/latex/moderncv/moderncv.cls

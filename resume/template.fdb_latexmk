@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1710194830.73978 "c:/Users/John/Downloads/LaTeXTemplates_medium-length-professional-cv_v3.0/template.tex" "template.pdf" "template" 1710194832.05134 0
-  "c:/Users/John/Downloads/LaTeXTemplates_medium-length-professional-cv_v3.0/template.tex" 1710194830 4593 eac8d2e5d9cdcffb9fa21daebee44a1b ""
+["pdflatex"] 1717792376.11129 "c:/Users/John/CLionProjects/resume-reference/resume/template.tex" "template.pdf" "template" 1717792377.35727 0
+  "c:/Users/John/CLionProjects/resume-reference/resume/template.tex" 1717792374 5387 832bc7d09f19dbec9551f7f83bcc1798 ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1710113580 2920 d63721872b8c77041b88e51b8f7c291d ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1710113580 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc" 1710113580 2906 e48aa7c95dea478a2e011bcb4f7878c9 ""
@@ -180,9 +180,9 @@
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1710118186 5513072 c253eaa6343e824d2661325481d57b70 ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1710118321 8221368 67b3f4b9ee6b7583f843f28fcc16a348 ""
   "c:/texlive/2023/texmf.cnf" 1710118164 713 e69b156964470283e0530f5060668171 ""
-  "template.aux" 1710194831 588 f6c0bf6668d7d91fd37de76fd18f1383 "pdflatex"
-  "template.out" 1710194831 433 6f439c324ae3fabd29bc491014e0b636 "pdflatex"
-  "template.tex" 1710194830 4593 eac8d2e5d9cdcffb9fa21daebee44a1b ""
+  "template.aux" 1717792377 635 4720ed43ece34281e0a3df6d1a8fa9de "pdflatex"
+  "template.out" 1717792377 511 c849d8cfb08129aba3f7c914407ec19a "pdflatex"
+  "template.tex" 1717792374 5387 832bc7d09f19dbec9551f7f83bcc1798 ""
   (generated)
   "template.aux"
   "template.log"

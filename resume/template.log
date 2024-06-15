@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.10)  11 MAR 2024 18:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.10)  7 JUN 2024 16:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/John/Downloads/LaTeXTemplates_medium-length-professional-cv_v3.0/template.tex
-(c:/Users/John/Downloads/LaTeXTemplates_medium-length-professional-cv_v3.0/template.tex
+**c:/Users/John/CLionProjects/resume-reference/resume/template.tex
+(c:/Users/John/CLionProjects/resume-reference/resume/template.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (c:/texlive/2023/texmf-dist/tex/latex/moderncv/moderncv.cls
@@ -670,21 +670,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: 6F439C324AE3FABD29BC491014E0B636;433.
+(rerunfilecheck)             Checksum: C849D8CFB08129ABA3F7C914407EC19A;511.
  ) 
 Here is how much of TeX's memory you used:
- 25893 strings out of 474116
- 495917 string characters out of 5747717
- 1948190 words of memory out of 5000000
+ 25896 strings out of 474116
+ 495881 string characters out of 5747717
+ 1952190 words of memory out of 5000000
  47795 multiletter control sequences out of 15000+600000
- 590790 words of font info for 79 fonts, out of 8000000 for 9000
+ 590932 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 129i,11n,129p,1079b,470s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 129i,11n,129p,1057b,470s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qplb.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qplri.pfb>
-Output written on template.pdf (1 page, 238086 bytes).
+Output written on template.pdf (1 page, 241739 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
- 21549 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 88 PDF objects out of 1000 (max. 8388607)
+ 67 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 500000)
+ 21557 words of extra memory for PDF output out of 24883 (max. 10000000)
 
